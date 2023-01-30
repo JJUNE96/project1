@@ -1,0 +1,840 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Nanum+Myeongjo&family=Ubuntu&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  text-align: center;
+  align-items: center;
+  background: white;
+  opacity: 60%;
+  justify-content: space-between;
+}
+#header .categories {
+  width: 100%;
+  margin: 20px auto;
+}
+#header .categories a {
+  font: bold 45px/1 "Lora";
+  color: black;
+  letter-spacing: 5px;
+}
+#header .categories .nav_web #gnb {
+  display: inline-flex;
+  color: black;
+}
+#header .categories .nav_web #gnb li {
+  width: 120px;
+  margin: 20px 30px 10px;
+}
+#header .categories .nav_web #gnb li a {
+  display: block;
+  font: bold 15px "Lora";
+  color: black;
+  text-align: center;
+}
+#header .categories .nav_web #gnb li:hover {
+  background: #fff;
+}
+#header .categories .nav_web #gnb li:hover .sub_menu1 {
+  display: block;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: -10px;
+  background: #fff;
+}
+#header .categories .nav_web #gnb li:hover .sub_menu1 ul {
+  display: block;
+  margin: 5px;
+}
+#header .categories .nav_web #gnb li:hover .sub_menu1 ul li {
+  width: 110px;
+  padding: 10px;
+  margin: 0 10px;
+  border-bottom: 2px solid #888;
+  background: transparent;
+  text-align: left;
+}
+#header .categories .nav_web #gnb li:hover .sub_menu1 ul li:last-child {
+  border-bottom: none;
+}
+#header .categories .nav_web #gnb li:hover .sub_menu1 ul li a:hover {
+  color: #110363;
+}
+#header .categories .nav_web #gnb li:hover .sub_menu1 ul li .fa-angle-right {
+  float: right;
+}
+#header .categories .nav_web #gnb li .sub_menu1 {
+  display: none;
+}
+#header .categories .nav_web .util {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+#header .categories .nav_web .util li {
+  float: left;
+  margin-right: 20px;
+}
+#header .categories .nav_web .util li a {
+  font: 12px/1 "Lora";
+  color: black;
+}
+#header .categories .btnCall {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+#header .categories .btnCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+}
+#header .categories .btnCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+#header .categories .btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  text-indent: -999999px;
+  transition: all 1s;
+}
+#header .categories .btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+#header .categories .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+#header .categories .btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#header .categories .nav_mo {
+  width: 200px;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 85px;
+  left: -270px;
+  z-index: 10;
+  padding: 0px 30px;
+  text-align: center;
+  transition: 0.5s;
+  display: none;
+}
+#header .categories .nav_mo.on {
+  left: 0;
+}
+#header .categories #gnb_mo li a {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+  font: bold 14px/1 "Lora";
+  color: #000;
+}
+#header .categories #gnb_mo li .sub_menu1 {
+  display: none;
+}
+
+#main {
+  width: 100%;
+  height: calc(100vh - 121px);
+  margin: 0 auto;
+}
+#main video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#gallery {
+  width: 100%;
+}
+#gallery .inner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+#gallery .inner #tab {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gallery .inner #tab main {
+  width: 80%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+#gallery .inner #tab main nav {
+  width: 200px;
+  height: 100%;
+  margin-right: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+#gallery .inner #tab main nav ul {
+  width: 100%;
+}
+#gallery .inner #tab main nav ul li {
+  width: 100%;
+  height: 125px;
+}
+#gallery .inner #tab main nav ul li a {
+  display: table;
+  width: 100%;
+  height: 100%;
+  font: bold 16px/1 "Lora";
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gallery .inner #tab main nav ul li.on a {
+  color: #bdb9b7;
+}
+#gallery .inner #tab main section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#gallery .inner #tab main section article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+  font-size: 80px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#gallery .inner #tab main section article a {
+  width: 100%;
+  height: 100%;
+}
+#gallery .inner #tab main section article a img {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+#gallery .inner #tab main section article.on {
+  display: flex;
+}
+#gallery .inner #tab .view {
+  width: 15%;
+  position: absolute;
+  top: 750px;
+  right: 150px;
+}
+#gallery .inner #tab .view a {
+  display: block;
+  width: 100%;
+  height: 30px;
+  font: bold 18px/30px "Lora";
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#youtube .swiper1 {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  width: 80%;
+  height: 500px;
+  overflow: hidden;
+}
+#youtube .swiper1 .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+#youtube .swiper1 .swiper-wrapper .swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#youtube .swiper1 .swiper-wrapper .swiper-slide video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#youtube .swiper1 .swiper-button-next,
+#youtube .swiper1 .swiper-button-prev {
+  right: 10px;
+  padding: 30px;
+  color: #fff !important;
+  border-radius: 50%;
+  fill: black !important;
+  stroke: black !important;
+}
+#youtube .inner {
+  width: 15%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 0;
+}
+#youtube .inner a {
+  display: block;
+  width: 100%;
+  height: 30px;
+  text-decoration: underline;
+  font: bold 18px/30px "Lora";
+  color: black;
+  text-align: center;
+}
+
+#board {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#board img {
+  width: 80%;
+  height: 700px;
+}
+#board .inner {
+  width: 15%;
+  margin: 0 auto;
+  padding: 20px 15px;
+  position: absolute;
+  bottom: -3px;
+  left: 400px;
+  transform: translate(-50%, -50%);
+  background: white;
+  opacity: 80%;
+}
+#board .inner h1 {
+  font: bold 25px/1 "Lora";
+  color: black;
+  margin-bottom: 20px;
+}
+#board .inner p {
+  font: normal 20px/1 "Lora";
+  color: #888;
+  margin-bottom: 20px;
+}
+#board .inner a {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #000;
+  font: bold 13px/30px "Lora";
+  color: black;
+  text-align: center;
+}
+
+#news {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#news .inner {
+  width: 15%;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  background: white;
+}
+#news .inner h1 {
+  font: bold 25px/1 "Lora";
+  color: black;
+  margin-bottom: 20px;
+}
+#news .inner p {
+  font: normal 20px/1 "Lora";
+  color: #888;
+  margin-bottom: 80px;
+}
+#news .inner a {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #bbb;
+  font: bold 13px/30px "Lora";
+  color: black;
+  text-align: center;
+}
+
+.swiper {
+  position: relative;
+  background: #fff;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  width: 56%;
+  height: 80%;
+  top: 200px;
+  left: 200px;
+  overflow: hidden;
+}
+.swiper .swiper-wrapper {
+  width: 100%;
+  height: 80%;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.swiper .swiper-wrapper .swiper-slide:hover img {
+  transform: scale(1.2);
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  right: 10px;
+  padding: 30px;
+  color: #888 !important;
+  fill: black !important;
+  stroke: black !important;
+}
+.swiper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+  opacity: 1;
+  background: #fff;
+}
+.swiper .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #888;
+}
+
+#footer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  min-height: 80vh;
+  width: 100%;
+  position: relative;
+  top: 300px;
+}
+#footer .inner {
+  margin: 0px 200px;
+  display: flex;
+  flex-direction: column;
+}
+#footer .inner h1 {
+  color: #000;
+  text-align: center;
+}
+#footer .inner .tab {
+  position: relative;
+  background: #fff;
+  padding: 0px 20px 20px;
+  margin-top: 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+#footer .inner .tab:hover label::after {
+  color: #000;
+}
+#footer .inner .tab input[type=radio] {
+  appearance: none;
+}
+#footer .inner .tab input[type=radio]:checked + label::after {
+  transform: rotate(135deg);
+  color: #000;
+}
+#footer .inner .tab input[type=radio]:checked ~ label h2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: flex-end;
+  font-size: 80px;
+  padding: 20px;
+  transition: 0.5s;
+  color: rgb(197, 196, 196);
+  opacity: 80%;
+}
+#footer .inner .tab input[type=radio]:checked ~ .content {
+  max-height: 100vh;
+}
+#footer .inner .tab input[type=radio]:checked ~ .content p {
+  color: #000;
+}
+#footer .inner .tab input[type=radio]:checked ~ label h3 {
+  background: #fff;
+  padding: 2px 10px;
+  color: #000;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+#footer .inner .tab label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#footer .inner .tab label::after {
+  content: "-";
+  position: absolute;
+  right: 20px;
+  font-size: 32px;
+  transition: all 1s;
+  color: rgba(0, 0, 0, 0.4);
+}
+#footer .inner .tab label h2 {
+  width: 40px;
+  height: 40px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+#footer .inner .tab label h3 {
+  font-weight: 500px;
+  color: #000;
+  position: relative;
+  z-index: 10;
+}
+#footer .inner .tab .content {
+  max-height: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+#footer .inner .tab .content p {
+  font-size: 15px;
+  line-height: 25px;
+  position: relative;
+  padding: 15px 0;
+  color: #333;
+  z-index: 10;
+}
+#footer .inner .tab:nth-of-type(1) label h2 {
+  background: linear-gradient(135deg, #fff, #fff);
+}
+#footer .inner .tab:nth-of-type(2) label h2 {
+  background: linear-gradient(135deg, #fff, #fff);
+}
+#footer .inner .tab:nth-of-type(3) label h2 {
+  background: linear-gradient(135deg, #fff, #fff);
+}
+#footer .inner .tab:nth-of-type(4) label h2 {
+  background: linear-gradient(135deg, #fff, #fff);
+}
+#footer .inner address {
+  float: left;
+  width: 100%;
+  font: 14px/1.3 "Lora";
+  color: black;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #888;
+  padding-top: 20px;
+  text-align: center;
+}
+#footer .inner p {
+  float: left;
+  text-align: center;
+  width: 100%;
+  font: 12px/1 "Lora";
+  color: black;
+}
+
+@media screen and (max-width: 1179px) {
+  #header {
+    width: 100%;
+  }
+  #header .categories {
+    width: 100%;
+  }
+  #header .categories > a {
+    left: 30px;
+    bottom: 30px;
+  }
+  #header .categories .nav_web {
+    display: none;
+  }
+  #header .categories .btnCall {
+    display: block;
+  }
+  #header .categories .nav_mo {
+    display: block;
+  }
+  #main {
+    width: 100%;
+  }
+  #main img {
+    width: 100%;
+    height: 600px;
+  }
+  #gallery .inner #tab {
+    height: 100vh;
+  }
+  #gallery .inner #tab main {
+    width: 80%;
+    height: 500px;
+  }
+  #gallery .inner #tab main section {
+    width: 100%;
+  }
+  #gallery .inner #tab main section article {
+    width: 100%;
+  }
+  #gallery .inner #tab main section article a {
+    width: 100%;
+  }
+  #gallery .inner #tab main section article a img {
+    width: 100%;
+  }
+  #gallery .inner #tab .view {
+    width: 30%;
+    right: 100px;
+  }
+  #youtube .swiper1 {
+    width: 80%;
+  }
+  #youtube .swiper1 .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  #youtube .swiper1 .swiper-wrapper .swiper-slide video {
+    width: 100%;
+    height: 100%;
+  }
+  #youtube .inner {
+    width: 25%;
+  }
+  #youtube .inner a {
+    width: 100%;
+    height: 30px;
+  }
+  #board {
+    width: 80%;
+    margin-left: 100px;
+  }
+  #board img {
+    width: 100%;
+    height: 500px;
+  }
+  #board .inner {
+    opacity: 80%;
+    width: 45%;
+    left: 200px;
+    bottom: -90px;
+  }
+  #board .inner a {
+    display: block;
+    width: 100%;
+    height: 30px;
+  }
+  #news {
+    width: 80%;
+  }
+  #news .inner {
+    display: none;
+  }
+  .swiper {
+    width: 100%;
+    height: 80%;
+    left: 10px;
+  }
+  .swiper .swiper-wrapper {
+    width: 100%;
+  }
+  .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+  }
+  .swiper .swiper-wrapper .swiper-slide:hover img {
+    transform: scale(1.2);
+  }
+  #footer {
+    width: 100%;
+  }
+  #footer .inner {
+    margin: 50px 30px;
+  }
+}
+@media screen and (max-width: 539px) {
+  #main {
+    width: 100%;
+  }
+  #main img {
+    height: 80vmax;
+  }
+  #gallery .inner #tab main {
+    width: 80%;
+  }
+  #gallery .inner #tab main nav {
+    width: 100px;
+  }
+  #gallery .inner #tab main nav ul li a {
+    width: 100%;
+  }
+  #gallery .inner #tab main nav ul li.on a {
+    color: #bdb9b7;
+  }
+  #gallery .inner #tab main section article a {
+    width: 100%;
+  }
+  #gallery .inner #tab main section article a img {
+    width: 100%;
+  }
+  #gallery .inner #tab main section article.on {
+    display: flex;
+  }
+  #youtube .swiper1 {
+    width: 80%;
+  }
+  #youtube .swiper1 .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  #youtube .swiper1 .swiper-wrapper .swiper-slide video {
+    width: 100%;
+    height: 100%;
+  }
+  #youtube .inner {
+    width: 30%;
+  }
+  #youtube .inner a {
+    width: 100%;
+    height: 30px;
+  }
+  #board {
+    margin-left: 50px;
+  }
+  #board img {
+    width: 90%;
+  }
+  #board .inner {
+    width: 200px;
+    left: 140px;
+    bottom: -90px;
+  }
+  #news .inner {
+    display: none;
+  }
+  .swiper {
+    width: 100%;
+  }
+  .swiper .swiper-wrapper {
+    width: 100%;
+  }
+  .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+  }
+  .swiper .swiper-wrapper .swiper-slide:hover img {
+    transform: scale(1.2);
+  }
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev {
+    right: 10px;
+    padding: 30px;
+    color: #000 !important;
+    fill: black !important;
+    stroke: black !important;
+    display: none;
+  }
+  #footer .inner {
+    margin: 0px 50px;
+  }
+  #footer .inner .tab:hover label::after {
+    color: #000;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

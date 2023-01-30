@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>June's Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png" >
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>  
+    <script src="https://kit.fontawesome.com/c12878d3ba.js" crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
+   
+</head>
+
+<body>
+    <header id="header">
+        <div class="categories">
+            <a href="#" class="logo">
+             JUNE          
+            </a>
+            <!-- web반응형 -->
+              <nav class="nav_web">
+                <ul id="gnb">
+                    <li><a href="about.html">ABOUT</a></li>
+                    
+                   
+                    <li>
+                        <a href="gallery.html">GALLERY</a>
+                        <div class="sub_menu1">
+                            <ul>
+                              <li><a href="gallery.html">gallery</a></li>
+                              <li><a href="youtube.html">youtube</a></li>
+                            </ul>
+                          </div>
+                    </li>
+
+                    <li>
+                        <a href="board.html">BOARD</a>
+                        <div class="sub_menu1">
+                            <ul>
+                              <li><a href="#">NOTICE</a></li>
+                              <li><a href="#">FAQ</a></li>
+                            </ul>
+                          </div>
+                    </li>
+                   
+                   
+                    <li><a href="news.html">NEWS</a></li>
+
+                    <li><a href="join.html">JOIN</a></li>
+                </ul>
+
+
+                <ul class="util">
+                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fas fa-location-dot"></i></a></li>
+                    <li><a href="#">Login</a></li>
+                  </ul>
+              </nav>  
+
+              
+      <a href="#" class="btnCall">
+        <span>메뉴호출</span>
+      </a>
+
+      <!-- 모바일 반응형-->
+          <nav class="nav_mo">
+           
+            <ul id="gnb_mo">
+                <li><a href="project1.html">ABOUT</a></li>
+                
+              
+                <li>
+                    <a href="gallery.html">GALLERY</a>
+                    <div class="sub_menu1">
+                        <ul>
+                          <li><a href="#">gallery</a></li>
+                          <li><a href="#">youtube</a></li>
+                        </ul>
+                      </div>
+                </li>
+
+                <li>
+                    <a href="board.html">BOARD</a>
+                    <div class="sub_menu1">
+                        <ul>
+                          <li><a href="#">NOTICE</a></li>
+                          <li><a href="#">FAQ</a></li>
+                        </ul>
+                      </div>
+                </li>
+              
+              
+                <li><a href="news.html">NEWS</a></li>
+
+                <li><a href="project2.html">JOIN</a></li>
+            </ul>
+          </nav>
+        </div>
+</header>
+
+<!-- 메인 상위 비디오 -->
+<figure id="main">
+    <video src="img/main_video.mp4" autoplay loop muted></video>
+</figure>
+
+<!-- 갤러리 서브페이지 -->
+    <div id="gallery">
+        <div class="inner">
+            <section id="tab">
+                <main>
+                    <nav>
+                        <ul>
+                            <li class="on"><a href="#">gallery1 &nbsp<i class="fa-thin fas fa-play"></i></a></li>
+                            <li><a href="#">gallery2 &nbsp<i class="fa-thin fas fa-play"></i></a></li>
+                            <li><a href="#">gallery3 &nbsp<i class="fa-thin fas fa-play"></i></a></li>
+                            <li><a href="#">gallery4 &nbsp<i class="fa-thin fas fa-play"></i></a></li>
+                        </ul>
+                    </nav>
+                    <section>
+                        <article class="on"><a href="gallery.html"><img src="img/gallery6.jpg" alt=""></a></article>
+                        <article><a href="gallery.html"><img src="img/gallery2.jpg" alt=""></a></article>
+                        <article><a href="gallery.html"><img src="img/gallery3.jpg" alt=""></a></article>
+                        <article><a href="gallery.html"><img src="img/gallery4.jpg" alt=""></a></article>
+                    </section>
+                </main>
+                <div class="view">
+                  <a href="gallery.html">View Our Gallery</a>
+                </div>
+            </section>
+        </div>
+      
+    </div>
+<!-- board 다른버전! 보류
+    <figure id="board">
+        <img src="img/main.png" alt="">
+        <div class="inner">
+            <h1>Board</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit<br/>
+                 Debitis ipsam harum quisquam accusamus incidunt.
+            </p>
+            <a href="board.html">View Our Board</a>
+            </div>
+    </figure> -->
+
+<!-- youtube 서브페이지 -->
+<div id="youtube">
+    <div class="swiper1 swiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><video src="img/youtube1.mp4" autoplay loop muted></video></div>
+        <div class="swiper-slide"><video src="img/youtube2.mp4" autoplay loop muted></video></div>
+        <div class="swiper-slide"><video src="img/youtube3.mp4" autoplay loop muted></video></div>
+        <div class="swiper-slide"><video src="img/youtube4.mp4" autoplay loop muted></video></div>
+        <div class="swiper-slide"><video src="img/youtube5.mp4" autoplay loop muted></video></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="inner">
+      <a href="youtube.html">View Our Youtube</a>
+    </div>
+  </div>
+   
+    
+<!-- board 서브페이지 -->
+<figure id="board">
+    <img src="img/main.png" alt="">
+    <div class="inner">
+        <h1>Board</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit<br/>
+             Debitis ipsam harum quisquam accusamus incidunt.
+        </p>
+        <a href="board.html">View Our Board</a>
+      </div>
+</figure>
+
+<!-- news서브페이지 -->
+    <section id="news">
+        <div class="inner">
+            <h1>News</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p> 
+            <a href="youtube.html">View Our News</a>
+        </div>
+            
+    </section>
+<!-- swiper 부분 -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/news1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/news2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/news3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/news4.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/news5.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/news6.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/news7.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/news8.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/news9.jpg" alt=""></div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+          </div>
+
+
+    <footer id="footer">
+        <div class="inner">
+
+                <h1>Frequently Asked Questions</h1>
+                <div class="tab">
+                  <input type="radio" name="acc" id="acc1">
+                  <label for="acc1">
+                    <h2>01</h2>
+                    <h3>프로젝트가 어떻게 구성되어 있나요?</h3>
+                  </label>
+                  <div class="content">
+                    <p>1개의 메인페이지와 5개의 서브페이지(About, Gallery, Board, News, Join)로 구성되어있습니다. </p>
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="radio" name="acc" id="acc2">
+                  <label for="acc2">
+                    <h2>02</h2>
+                    <h3>프로젝트의 목표는 무엇인가요?</h3>
+                  </label>
+                  <div class="content">
+                    <p>웹개발을 공부하며, 프론트엔드의 전반적인 프로세스를 이해하는것이 목표입니다. html, css를 이용하여 웹페이지를 꾸미고, javascript를 이용하여 이벤트 처리를 하며 전반적인 프론트엔드 프로세스를 이해하는데 도움이 될 것 같아 프로젝트를 시작하게 되었습니다. </p>
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="radio" name="acc" id="acc3">
+                  <label for="acc3">
+                    <h2>03</h2>
+                    <h3>프로젝트를 하면서 어려웠던 점은 무었인가요?</h3>
+                  </label>
+                  <div class="content">
+                    <p>사이트를 디자인하는 것이 어려웠습니다. css 부분이 아직 부족하다는 것을 느꼈으며, 헷갈리거나 어려운 부분은 구글링을 통해서 해결하였습니다.
+                      또한 효율적으로 코드를 작성하고 유지보수하기 쉬운 설계를 하는 고민을 하는 일이 가장 어려웠습니다. </p>
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="radio" name="acc" id="acc4">
+                  <label for="acc4">
+                    <h2>04</h2>
+                    <h3>보완해야할 점은 무엇인가요?</h3>
+                  </label>
+                  <div class="content">
+                    <p>가장 큰 취약점은 중복되는 코드가 많았고 효율적으로 코드를 작성하고 유지보수를 위해 설계를 하는것을 앞으로 더 보완해야 할 것 같습니다.</p>
+                  </div>
+                </div>
+
+            <!-- <ul>
+                <li><a href="board.html">BOARD</a></li>
+                <li><a href="location.html">LOCATION</a></li>
+                <li><a href="youtube.html">YOUTUBE</a></li>
+            </ul> -->
+<br/><br/><br/>
+
+            <address>
+                address: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ipsam!
+                TEL : +82-010-2968-5070 FAX : +82-010-2968-5070
+              </address>
+              <p>Copyright &copy; 2023 HE JUN ALL Right reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
