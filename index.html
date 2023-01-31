@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <title>June's Project</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icon.png" >
@@ -13,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>  
     <script src="https://kit.fontawesome.com/c12878d3ba.js" crossorigin="anonymous"></script>
     <script defer src="main.js"></script>
+    <script defer src="anime.js"></script>
    
 </head>
 
@@ -135,17 +135,6 @@
         </div>
       
     </div>
-<!-- board 다른버전! 보류
-    <figure id="board">
-        <img src="img/main.png" alt="">
-        <div class="inner">
-            <h1>Board</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit<br/>
-                 Debitis ipsam harum quisquam accusamus incidunt.
-            </p>
-            <a href="board.html">View Our Board</a>
-            </div>
-    </figure> -->
 
 <!-- youtube 서브페이지 -->
 <div id="youtube">
@@ -160,7 +149,6 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
-
     <div class="inner">
       <a href="youtube.html">View Our Youtube</a>
     </div>
@@ -169,15 +157,38 @@
     
 <!-- board 서브페이지 -->
 <figure id="board">
-    <img src="img/board2.jpg" alt="">
+    <img src="img/board2.jpg" class="board" alt="">
     <div class="inner">
         <h1>Board</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit<br/>
              Debitis ipsam harum quisquam accusamus incidunt.
         </p>
-        <a href="board.html">View Our Board</a>
+        <a href="#" class="btnOpen">View Our Board</a>
       </div>
 </figure>
+
+    
+<aside>
+
+  <div class="top"></div>
+  <div class="right"></div>
+  <div class="bottom"></div>
+  <div class="left"></div>
+  <div class="container">
+    <img src="img/pic.png" class="pic" alt="">
+    <div class="content">
+      <h2>Board</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo laboriosam nihil provident consequuntur. Eaque
+        id exercitationem officiis ab eos asperiores natus saepe dolorem. Quisquam aspernatur sapiente odit, illo quos
+        possimus.</p>
+      <a href="#" class="btnClose">
+        <img src="img/close.png" alt="">
+      </a>
+    </div>
+  </div>
+
+</aside>
+
 
 <!-- news서브페이지 -->
     <section id="news">
@@ -269,6 +280,7 @@
               <p>Copyright &copy; 2023 HE JUN ALL Right reserved</p>
         </div>
     </footer>
+
 
 </body>
 </html>

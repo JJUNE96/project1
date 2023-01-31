@@ -60,3 +60,95 @@ btnCall.onclick = function (e) {
 	},
   });
 
+
+  //board callback
+   const btnOpen = document.querySelector('.btnOpen');
+   const board = document.querySelector('#board');
+   const aside = document.querySelector('aside');
+
+
+	const _top = aside.querySelector('.top');
+	const _right = aside.querySelector('.right');
+	const _bottom = aside.querySelector('.bottom');
+	const _left = aside.querySelector('.left');
+	const _container = aside.querySelector('.container');
+
+	const btnClose = document.querySelector('.btnClose');
+
+	let speed = 500;
+
+	btnOpen.addEventListener('click',(e) => {
+		e.preventDefault();
+		aside.style.display = 'block';
+		board.classList.add('off');
+
+		new Anim(_top, {
+			prop: 'width',
+			value: '100%',
+			duration: speed,
+			callback: () => {
+				new Anim(_right, {
+					prop: 'height',
+					value: '100%',
+					duration: speed,
+					callback: () => {
+						new Anim(_bottom, {
+							prop: 'width',
+							value: '100%',
+							duration: speed,
+							callback: () => {
+								new Anim(_left, {
+									prop: 'height',
+									value: '100%',
+									duration: speed,
+									callback: () => {
+										new Anim(_container, {
+											prop: 'opacity',
+											value: 1,
+											duration: speed,
+										});
+									},
+								});
+							},
+						});
+					},
+				});
+			},
+		});
+
+	});
+
+	btnClose.addEventListener('click',(e)=>{
+		e.preventDefault();
+		new Anim(_container, {
+			prop: 'opacity',
+			value: 0,
+			duration: speed,
+			callback: () => {
+				new Anim(_top, {
+					prop: 'width',
+					value: '0%',
+					duration: speed,
+				});
+				new Anim(_right, {
+					prop: 'height',
+					value: '0%',
+					duration: speed,
+				});
+				new Anim(_bottom, {
+					prop: 'width',
+					value: '0%',
+					duration: speed,
+				});
+				new Anim(_left, {
+					prop: 'height',
+					value: '0%',
+					duration: speed,
+					callback: () => {
+						aside.style.display = 'none';
+						board.classList.remove('off');
+					},
+				});
+			},
+		});
+	})
