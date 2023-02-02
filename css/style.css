@@ -15,6 +15,302 @@ a {
   text-decoration: none;
 }
 
+#header_sub {
+  width: 100%;
+  z-index: 5;
+  text-align: center;
+  align-items: center;
+  background: #fff;
+  justify-content: space-between;
+}
+#header_sub .categories {
+  width: 100%;
+  margin: 20px auto;
+}
+#header_sub .categories a {
+  font: bold 45px/1 "Lora";
+  color: black;
+  letter-spacing: 5px;
+}
+#header_sub .categories .nav_web #gnb {
+  display: inline-flex;
+  color: black;
+}
+#header_sub .categories .nav_web #gnb li {
+  width: 120px;
+  margin: 20px 30px 10px;
+}
+#header_sub .categories .nav_web #gnb li a {
+  display: block;
+  font: bold 15px "Lora";
+  color: black;
+  text-align: center;
+}
+#header_sub .categories .nav_web #gnb li:hover {
+  background: #fff;
+}
+#header_sub .categories .nav_web #gnb li:hover .sub_menu1 {
+  display: block;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: -10px;
+  background: #fff;
+}
+#header_sub .categories .nav_web #gnb li:hover .sub_menu1 ul {
+  display: block;
+  margin: 5px;
+}
+#header_sub .categories .nav_web #gnb li:hover .sub_menu1 ul li {
+  width: 110px;
+  padding: 10px;
+  margin: 0 10px;
+  border-bottom: 2px solid #888;
+  background: transparent;
+  text-align: left;
+}
+#header_sub .categories .nav_web #gnb li:hover .sub_menu1 ul li:last-child {
+  border-bottom: none;
+}
+#header_sub .categories .nav_web #gnb li:hover .sub_menu1 ul li a:hover {
+  color: #110363;
+}
+#header_sub .categories .nav_web #gnb li:hover .sub_menu1 ul li .fa-angle-right {
+  float: right;
+}
+#header_sub .categories .nav_web #gnb li .sub_menu1 {
+  display: none;
+}
+#header_sub .categories .nav_web .util {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+#header_sub .categories .nav_web .util li {
+  float: left;
+  margin-right: 20px;
+}
+#header_sub .categories .nav_web .util li a {
+  font: 12px/1 "Lora";
+  color: black;
+}
+#header_sub .categories .btnCall {
+  position: absolute;
+  top: 5%;
+  right: 30px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+#header_sub .categories .btnCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+}
+#header_sub .categories .btnCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+#header_sub .categories .btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  text-indent: -999999px;
+  transition: all 1s;
+}
+#header_sub .categories .btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+#header_sub .categories .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+#header_sub .categories .btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#header_sub .categories .nav_mo {
+  width: 200px;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 85px;
+  left: -270px;
+  z-index: 10;
+  padding: 0px 30px;
+  text-align: center;
+  transition: 0.5s;
+  display: none;
+}
+#header_sub .categories .nav_mo.on {
+  left: 0;
+}
+#header_sub .categories #gnb_mo li a {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+  font: bold 14px/1 "Lora";
+  color: #000;
+}
+#header_sub .categories #gnb_mo li .sub_menu1 {
+  display: none;
+}
+
+.content {
+  width: 100%;
+  padding: 0 0 150px;
+}
+.content .sub_visual {
+  width: 100%;
+  height: 250px;
+  border-top: 1px solid #000;
+  z-index: 1;
+}
+.content .inner {
+  width: 1180px;
+  margin: 0 auto;
+  min-height: 500px;
+  position: relative;
+  top: -200px;
+}
+.content .inner h1 {
+  font: normal 50px/1 "Lora";
+  color: #000;
+  z-index: 3;
+}
+.content .inner h1 span {
+  font: normal 20px/1 "Lora";
+  color: #000;
+}
+.content .inner h1 span::before {
+  content: "/";
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+#footer_sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  min-height: 25vh;
+  width: 100%;
+  position: relative;
+  top: 20px;
+}
+#footer_sub address {
+  float: left;
+  width: 100%;
+  font: 14px/1.3 "Lora";
+  color: black;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #888;
+  padding-top: 20px;
+  text-align: center;
+}
+#footer_sub p {
+  float: left;
+  text-align: center;
+  width: 100%;
+  font: 12px/1 "Lora";
+  color: black;
+}
+
+@media screen and (max-width: 1179px) {
+  #header_sub {
+    width: 100%;
+  }
+  #header_sub .categories {
+    width: 100%;
+  }
+  #header_sub .categories > a {
+    left: 30px;
+    bottom: 30px;
+  }
+  #header_sub .categories .nav_web {
+    display: none;
+  }
+  #header_sub .categories .btnCall {
+    display: block;
+  }
+  #header_sub .categories .nav_mo {
+    display: block;
+  }
+  .inner {
+    width: 100%;
+    height: 100px;
+  }
+  .inner > h1 {
+    left: 30px;
+    bottom: 30px;
+  }
+  .inner .menuWeb {
+    display: none;
+  }
+  .inner .btnCall {
+    display: block;
+  }
+  .inner .menuMo {
+    display: block;
+  }
+  .content .sub_visual {
+    height: 200px;
+  }
+  .content .inner {
+    width: 100%;
+    min-height: 400px;
+  }
+  #footer_sub {
+    padding: 100px 30px;
+  }
+  #footer_sub .inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 539px) {
+  .content {
+    padding: 0 0 80px;
+  }
+  .content .sub_visual {
+    height: 150px;
+  }
+  .content .inner {
+    min-height: 300px;
+  }
+  #footer_sub .inner h1 {
+    margin-bottom: 20px;
+  }
+  #footer_sub .inner ul {
+    float: left;
+  }
+  #footer_sub .inner ul li {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
 #header {
   width: 100%;
   position: fixed;
@@ -24,7 +320,6 @@ a {
   background: white;
   opacity: 60%;
   justify-content: space-between;
-  overflow: hidden;
 }
 #header .categories {
   width: 100%;
