@@ -4,6 +4,11 @@ $mobile: 539px;
 
 @import 'reset.scss';
 @import 'sub_layout.scss';
+@import 'board.scss';
+@import 'join.scss';
+@import 'gallery.scss';
+@import 'news.scss';
+@import 'about.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Nanum+Myeongjo&family=Ubuntu&display=swap');
 
@@ -17,10 +22,11 @@ $mobile: 539px;
     background: #fff;
     opacity: 60%;
 	justify-content: space-between;
+    padding-top: 10px;
 
     .categories{
         width: 100%;
-		margin: 20px auto;
+		margin: 5px auto;
         a{
             font: bold 45px/1 'Lora';
             color: black;
@@ -54,7 +60,7 @@ $mobile: 539px;
                                         margin: 5px;
                                         li {
                                             width: 100%;
-                                            padding: 15px; 
+                                            padding: 10px; 
                                             margin: 0 10px;
                                             background: transparent;
                                             text-align: left;
