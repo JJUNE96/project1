@@ -7,11 +7,11 @@
     align-items: center;
     background: #fff;
 	justify-content: space-between;
-    padding-top: 10px;
-
+    padding-top: 20px;
     .categories{
         width: 100%;
 		margin: 5px auto;
+        padding-bottom: 10px;
         border-bottom: 1px solid #000;
         a{
             font: bold 45px/1 'Lora';
@@ -42,7 +42,6 @@
                                     background: #fff;
                                     ul {
                                         display: block;
-                                        margin: 5px;
                                         li {
                                             width: 100%;
                                             padding: 10px; 

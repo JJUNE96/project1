@@ -22,11 +22,12 @@ $mobile: 539px;
     background: #fff;
     opacity: 60%;
 	justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 20px;
 
     .categories{
         width: 100%;
 		margin: 5px auto;
+        padding-bottom: 10px;
         a{
             font: bold 45px/1 'Lora';
             color: black;
@@ -57,7 +58,6 @@ $mobile: 539px;
                                     background: #fff;
                                     ul {
                                         display: block;
-                                        margin: 5px;
                                         li {
                                             width: 100%;
                                             padding: 10px; 
