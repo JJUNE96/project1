@@ -11,3 +11,14 @@ li {
 a {
 	text-decoration: none;
 }
+fieldset {
+	border: none;
+}
+table {
+	border-collapse: collapse;
+}
+.hidden {
+	position: absolute;
+	top: -99999999px;
+	opacity: 0;
+}

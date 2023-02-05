@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Nanum+Myeongjo&family=Ubuntu&display=swap");
 * {
   margin: 0px;
@@ -13,6 +14,20 @@ li {
 
 a {
   text-decoration: none;
+}
+
+fieldset {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.hidden {
+  position: absolute;
+  top: -99999999px;
+  opacity: 0;
 }
 
 #header_sub {
@@ -414,6 +429,75 @@ a {
   height: 40px;
   font: 20px/30px "Lora";
   border-radius: 3%;
+}
+
+.join {
+  height: 120vh;
+}
+.join .inner {
+  width: 80%;
+}
+.join .inner #member {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.join .inner #member table {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: left;
+}
+.join .inner #member table tr {
+  width: 500px;
+}
+.join .inner #member table tr th,
+.join .inner #member table tr td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 25px;
+}
+.join .inner #member table th {
+  width: 200px;
+}
+.join .inner #member table th input[type=reset],
+.join .inner #member table th input[type=submit] {
+  width: 100%;
+  height: 60px;
+  margin: 10px;
+  font: bold 18px/40px "arial";
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+}
+.join .inner #member table td {
+  width: 800px;
+  border-left: 1px solid #fff;
+}
+.join .inner #member table td input[type=text],
+.join .inner #member table td input[type=password],
+.join .inner #member table td select {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #fff;
+}
+.join .inner #member table td input[type=radio],
+.join .inner #member table td input[type=checkbox] {
+  margin-right: 30px;
+}
+.join .inner #member table td textarea {
+  resize: none;
+  width: 60%;
+  height: 150px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid #000;
+}
+.join .inner #member table td p {
+  font: 11px/1 "맑은 고딕";
+  color: red;
+  margin-top: 5px;
 }
 
 #header {
