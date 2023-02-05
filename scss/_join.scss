@@ -2,7 +2,9 @@
    .join{
     height: 120vh;
     .inner{
-        width: 80%;
+        h1{
+            margin-left: 100px;
+        }
       #member{
         display: flex;
         justify-content: center;
