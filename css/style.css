@@ -292,7 +292,7 @@ table {
     display: block;
   }
   .sub_content .sub_visual {
-    height: 200px;
+    height: 250px;
   }
   .sub_content .inner {
     width: 100%;
@@ -310,7 +310,7 @@ table {
     padding: 0 0 80px;
   }
   .sub_content .sub_visual {
-    height: 150px;
+    height: 250px;
   }
   .sub_content .inner {
     min-height: 300px;
@@ -431,6 +431,231 @@ table {
   border-radius: 3%;
 }
 
+@media screen and (max-width: 1179px) {
+  .board {
+    height: 100%;
+    overflow: hidden;
+  }
+  .board h1 {
+    margin-left: 50px;
+  }
+  .board .inner table {
+    width: 80vw;
+    border-bottom: 2px solid #000;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    margin-left: 50px;
+  }
+  .board .inner table tr:nth-of-type(even) {
+    background: #fff;
+  }
+  .board .inner table tr:hover {
+    background: #fff;
+  }
+  .board .inner table tr th {
+    padding: 15px;
+    background: #000;
+    color: #fff;
+  }
+  .board .inner table tr th:nth-of-type(1) {
+    width: 10%;
+  }
+  .board .inner table tr th:nth-of-type(3) {
+    width: 15%;
+  }
+  .board .inner table tr th:nth-of-type(4) {
+    width: 15%;
+  }
+  .board .inner table tr td {
+    padding: 13px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+  }
+  .board .inner table tr td:nth-of-type(2) {
+    text-align: left;
+  }
+  .board .inner table tr td:nth-of-type(3) {
+    font-family: "Lora";
+  }
+  .board .inner table tr td a {
+    color: #000;
+    line-height: 1.4;
+  }
+  .board .inner .pagination {
+    width: 80vw;
+    text-align: center;
+    margin-left: 50px;
+  }
+  .board .inner .pagination::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .board .inner .pagination .prev {
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+  .board .inner .pagination .next {
+    float: right;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+  .board .inner .pagination .numbers {
+    display: inline-block;
+    text-align: center;
+  }
+  .board .inner .pagination .numbers a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    font: 11px/30px "Lora";
+    color: #000;
+    margin: 0 5px;
+    transition: 0.5s;
+  }
+  .board .inner .pagination .numbers a:hover {
+    background: #000;
+    color: #fff;
+  }
+  .board .inner .write {
+    margin-top: 80px;
+    float: right;
+    margin-right: 100px;
+  }
+  .board .inner .write a {
+    background: #000;
+    padding: 5px 30px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font: 20px/30px "Lora";
+    border-radius: 3%;
+  }
+}
+@media screen and (max-width: 539px) {
+  .board {
+    height: 100%;
+    overflow: hidden;
+  }
+  .board h1 {
+    margin-left: 50px;
+  }
+  .board .inner table {
+    width: 80vw;
+    border-bottom: 2px solid #000;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    margin-left: 50px;
+  }
+  .board .inner table tr:nth-of-type(even) {
+    background: #fff;
+  }
+  .board .inner table tr:hover {
+    background: #fff;
+  }
+  .board .inner table tr th {
+    padding: 15px;
+    background: #000;
+    color: #fff;
+  }
+  .board .inner table tr th:nth-of-type(1) {
+    width: 10%;
+  }
+  .board .inner table tr th:nth-of-type(3) {
+    width: 15%;
+  }
+  .board .inner table tr th:nth-of-type(4) {
+    width: 15%;
+  }
+  .board .inner table tr td {
+    padding: 13px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+  }
+  .board .inner table tr td:nth-of-type(2) {
+    text-align: left;
+  }
+  .board .inner table tr td:nth-of-type(3) {
+    font-family: "Lora";
+  }
+  .board .inner table tr td a {
+    color: #000;
+    line-height: 1.4;
+  }
+  .board .inner .pagination {
+    width: 80vw;
+    text-align: center;
+  }
+  .board .inner .pagination::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .board .inner .pagination .prev {
+    float: left;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+  .board .inner .pagination .next {
+    float: right;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+  .board .inner .pagination .numbers {
+    display: inline-block;
+    text-align: center;
+  }
+  .board .inner .pagination .numbers a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    font: 11px/30px "Lora";
+    color: #000;
+    margin: 0 2px;
+    transition: 0.5s;
+  }
+  .board .inner .pagination .numbers a:hover {
+    background: #000;
+    color: #fff;
+  }
+  .board .inner .write {
+    margin-top: 60px;
+    float: right;
+    margin-right: 40px;
+  }
+  .board .inner .write a {
+    background: #000;
+    padding: 5px 20px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    font: 20px/30px "Lora";
+    border-radius: 3%;
+  }
+}
 .join {
   height: 120vh;
 }
@@ -517,7 +742,9 @@ table {
   width: 330px;
   height: 350px;
   float: left;
-  margin: 20px 45px;
+  margin: 20px;
+  margin-left: 60px;
+  margin-right: 20px;
   margin-bottom: 100px;
 }
 .about .inner .image .about-image img {

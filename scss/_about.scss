@@ -7,13 +7,16 @@
     .inner{
         width: 100%;
         margin: 0 auto;
+        
         .image{
             margin-top: 50px;
             .about-image{
                 width: 330px;
                 height: 350px;
                 float: left;
-                margin: 20px 45px;
+                margin: 20px;
+                margin-left: 60px;
+                margin-right: 20px;
                 margin-bottom: 100px;
                 img{
                     width: 100%;
