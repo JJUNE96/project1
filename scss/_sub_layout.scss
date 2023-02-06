@@ -12,7 +12,7 @@
         width: 100%;
 		margin: 5px auto;
         padding-bottom: 10px;
-        border-bottom: 1px solid #000;
+        border-bottom: 2px solid #000;
         a{
             font: bold 45px/1 'Lora';
             color: black;
@@ -277,7 +277,7 @@
 
 
 @media screen and (max-width: $tablet) {
-
+       
 #header_sub{
     width: 100%;
     .categories{
@@ -297,24 +297,6 @@
                 }
             }
        }
-		.inner {
-			width: 100%;
-			height: 100px;
-			> h1 {
-				left: 30px;
-				bottom: 30px;
-			}
-
-			.menuWeb {
-				display: none;
-			}
-			.btnCall {
-				display: block;
-			}
-			.menuMo {
-				display: block;
-			}
-		}
 
 	.sub_content {
 		.sub_visual {

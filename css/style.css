@@ -43,7 +43,7 @@ table {
   width: 100%;
   margin: 5px auto;
   padding-bottom: 10px;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #000;
 }
 #header_sub .categories a {
   font: bold 45px/1 "Lora";
@@ -272,23 +272,6 @@ table {
     display: block;
   }
   #header_sub .categories .nav_mo {
-    display: block;
-  }
-  .inner {
-    width: 100%;
-    height: 100px;
-  }
-  .inner > h1 {
-    left: 30px;
-    bottom: 30px;
-  }
-  .inner .menuWeb {
-    display: none;
-  }
-  .inner .btnCall {
-    display: block;
-  }
-  .inner .menuMo {
     display: block;
   }
   .sub_content .sub_visual {
@@ -657,7 +640,7 @@ table {
   }
 }
 .join {
-  height: 120vh;
+  height: 130vh;
 }
 .join .inner h1 {
   margin-left: 100px;
@@ -685,7 +668,6 @@ table {
 .join .inner #member table th {
   width: 200px;
 }
-.join .inner #member table th input[type=reset],
 .join .inner #member table th input[type=submit] {
   width: 100%;
   height: 60px;
@@ -713,7 +695,7 @@ table {
 }
 .join .inner #member table td textarea {
   resize: none;
-  width: 60%;
+  width: 100%;
   height: 150px;
   padding: 10px;
   background: rgba(0, 0, 0, 0.03);
@@ -723,6 +705,54 @@ table {
   font: 11px/1 "맑은 고딕";
   color: red;
   margin-top: 5px;
+}
+
+#tab {
+  width: 100%;
+  height: 1000px;
+  padding-top: 40px;
+  margin: 100px auto;
+  position: relative;
+}
+#tab dt {
+  border: 2px solid #000;
+  width: 50%;
+  height: 45px;
+  position: absolute;
+  top: 0;
+}
+#tab dt:nth-of-type(1) {
+  left: 0%;
+}
+#tab dt:nth-of-type(2) {
+  left: 50%;
+}
+#tab dt a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font: bold 19px/40px "Lora";
+  color: #000;
+  text-align: center;
+}
+#tab dt.on a {
+  background: #000;
+  color: #fff;
+}
+#tab dd {
+  width: 100%;
+  height: 950px;
+  background: #000;
+  display: none;
+  text-align: center;
+}
+#tab dd a {
+  font-size: 50px;
+  line-height: 200px;
+}
+#tab dd.on {
+  display: block;
 }
 
 .about {

@@ -1,0 +1,52 @@
+
+#tab {
+	width: 100%;
+    height: 1000px;
+	padding-top: 40px;
+	//border: 2px solid #ccc;
+	margin: 100px auto;
+	position: relative;
+	dt {
+        border: 2px solid #000;
+		width: calc(100% / 2);
+		height: 45px;
+		position: absolute;
+		top: 0;
+		&:nth-of-type(1) {
+			left: calc((100% / 2) * 0);
+		}
+		&:nth-of-type(2) {
+			left: calc((100% / 2) * 1);
+		}
+		
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			font: bold 19px/40px "Lora";
+			color: #000;
+			text-align: center;
+		}
+		&.on a {
+			background: #000;
+            color: #fff;
+            
+		}
+	}
+	dd {
+		width: 100%;
+		height: 950px;
+		background: #000;
+		display: none;
+		text-align: center;
+		a {
+			font-size: 50px;
+			line-height: 200px;
+		}
+
+		&.on {
+			display: block;
+		}
+	}
+}

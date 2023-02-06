@@ -1,6 +1,6 @@
    
    .join{
-    height: 120vh;
+    height:130vh;
     .inner{
         h1{
             margin-left: 100px;
@@ -27,7 +27,7 @@
             
             th {
                width: 200px;
-                input[type='reset'],
+                
                 input[type='submit'] {
                     width: 100%;
                     height: 60px;
@@ -65,7 +65,7 @@
     
                 textarea {
                     resize: none;
-                    width: 60%;
+                    width: 100%;
                     height: 150px;
                     padding: 10px;
                     background: rgba(0, 0, 0, 0.03);
