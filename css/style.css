@@ -714,6 +714,7 @@ table {
   padding-top: 40px;
   margin: 100px auto;
   position: relative;
+  opacity: 90%;
 }
 #tab dt {
   border: 2px solid #000;
@@ -748,9 +749,68 @@ table {
   display: none;
   text-align: center;
 }
-#tab dd a {
-  font-size: 50px;
-  line-height: 200px;
+#tab dd .vidList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+#tab dd .vidList article {
+  width: 30%;
+  height: 350px;
+  margin: 0 10px;
+  margin-top: 80px;
+}
+#tab dd .vidList article .pic {
+  display: block;
+  width: 100%;
+  height: 60%;
+}
+#tab dd .vidList article .pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  object-fit: cover;
+}
+#tab dd .vidList article .con {
+  width: 100%;
+  height: 20%;
+  padding: 20px;
+}
+#tab dd .vidList article .con h2 {
+  font: bold 20px/1.2 "arial";
+  color: #fff;
+  margin-bottom: 15px;
+}
+#tab dd .vidList article .con p {
+  font: 14px/1.4 "arial";
+  color: #fff;
+  margin-bottom: 20px;
+}
+#tab dd .vidList article .con span {
+  font: bold 16px/1 "arial";
+  color: #fff;
+}
+#tab dd .vidList figure.pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
+  overflow: hidden;
+}
+#tab dd .vidList figure.pop .btnClose {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  cursor: pointer;
 }
 #tab dd.on {
   display: block;
