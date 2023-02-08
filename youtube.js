@@ -2,7 +2,7 @@
 const vidList = document.querySelector('.vidList');
 const key = 'AIzaSyCmBr12Dx2_ZogVZDwezHZ3TDnPw6syC4Q';
 const playlistId = 'PL3DX3fAees627svxgQJYNHQrosJBEm0uc';
-const num = 6;
+const num = 12;
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
 const Close = document.querySelector('.btnClose');
 

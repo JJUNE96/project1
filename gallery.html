@@ -8,14 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icon.png" >
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>  
     <script src="https://kit.fontawesome.com/c12878d3ba.js" crossorigin="anonymous"></script>
-    <script defer src="main.js"></script>
-    <script defer src="join.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script defer src="gallery.js"></script>
-    <script defer src="anime.js"></script>
     <script defer src="youtube.js"></script>
+    <script defer src="flickr.js"></script>
    
 </head>
 
@@ -32,22 +29,12 @@
                    
                     <li>
                         <a href="gallery.html">GALLERY</a>
-                        <!-- <div class="sub_menu1">
-                            <ul>
-                              <li><a href="gallery.html">gallery</a></li>
-                              <li><a href="youtube.html">youtube</a></li>
-                            </ul>
-                          </div> -->
+                       
                     </li>
 
                     <li>
                         <a href="board.html">BOARD</a>
-                        <!-- <div class="sub_menu1">
-                            <ul>
-                              <li><a href="#">NOTICE</a></li>
-                              <li><a href="#">FAQ</a></li>
-                            </ul>
-                          </div> -->
+                      
                     </li>
                    
                    
@@ -78,22 +65,12 @@
               
                 <li>
                     <a href="gallery.html">GALLERY</a>
-                    <!-- <div class="sub_menu1">
-                        <ul>
-                          <li><a href="#">gallery</a></li>
-                          <li><a href="#">youtube</a></li>
-                        </ul>
-                      </div> -->
+                   
                 </li>
 
                 <li>
                     <a href="board.html">BOARD</a>
-                    <!-- <div class="sub_menu1">
-                        <ul>
-                          <li><a href="#">NOTICE</a></li>
-                          <li><a href="#">FAQ</a></li>
-                        </ul>
-                      </div> -->
+                   
                 </li>
               
               
@@ -106,16 +83,29 @@
 </header>
 
  
-<section class="sub_content">
+<section class="sub_content gallery">
   <div class="sub_visual"></div>
   <div class="inner">
     <h1>GALLERY <span>갤러리</span></h1>
 
-    <dl id="tab">
+    <dl id="tab_gallery">
       <dt class="on"><a href="#">Gallery</a></dt>
-      <dd class="on"><a href="#"></a></dd>
+      <dd class="on">
+        <div id="galleryList">
+          <article id="wrap">
+            <ul id="list">
+   <!-- <li class="item">
+            <div>
+                <a href="큰이미지 주소"><img src="썸네일주소" alt=""></a>
+                <p>이미지제목</p>
+            </div>
+        </li> -->
+            </ul>
+          </article>
+        </div>
+      </dd>
   
-      <dt><a href="#">Youtube</a></dt>
+      <dt ><a href="#">Youtube</a></dt>
       <dd>
         <div class="vidList">
           <!-- <article>

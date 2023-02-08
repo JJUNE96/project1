@@ -708,28 +708,28 @@ table {
   margin-top: 5px;
 }
 
-#tab {
+#tab_gallery {
   width: 100%;
-  height: 1000px;
+  height: 2000px;
   padding-top: 40px;
   margin: 100px auto;
   position: relative;
   opacity: 90%;
 }
-#tab dt {
+#tab_gallery dt {
   border: 2px solid #000;
   width: 50%;
   height: 45px;
   position: absolute;
   top: 0;
 }
-#tab dt:nth-of-type(1) {
+#tab_gallery dt:nth-of-type(1) {
   left: 0%;
 }
-#tab dt:nth-of-type(2) {
+#tab_gallery dt:nth-of-type(2) {
   left: 50%;
 }
-#tab dt a {
+#tab_gallery dt a {
   display: block;
   width: 100%;
   height: 100%;
@@ -738,61 +738,134 @@ table {
   color: #000;
   text-align: center;
 }
-#tab dt.on a {
+#tab_gallery dt.on a {
   background: #000;
   color: #fff;
 }
-#tab dd {
+#tab_gallery dd {
   width: 100%;
-  height: 950px;
+  height: 2000px;
   background: #000;
   display: none;
   text-align: center;
 }
-#tab dd .vidList {
+#tab_gallery dd #galleryList {
+  height: 1400px;
+}
+#tab_gallery dd #galleryList #wrap {
+  width: 100%;
+  height: 350px;
+  padding: 50px;
+}
+#tab_gallery dd #galleryList #wrap #list {
+  width: 100%;
+  opacity: 0;
+}
+#tab_gallery dd #galleryList #wrap #list.on {
+  opacity: 1;
+}
+#tab_gallery dd #galleryList #wrap #list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#tab_gallery dd #galleryList #wrap #list li {
+  width: 33.3333333333%;
+  float: left;
+  padding: 10px;
+}
+#tab_gallery dd #galleryList #wrap #list li div {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(254, 252, 252, 0.968);
+  border-radius: 5px;
+  transform-origin: center -20px;
+}
+#tab_gallery dd #galleryList #wrap #list li div a > img {
+  width: 100%;
+  border-radius: 5%;
+  transition: 0.3s;
+  filter: grayscale(100%);
+  border: 5px solid #f8f8f8;
+}
+#tab_gallery dd #galleryList #wrap #list li div p {
+  font: 18px/1.2 "Lora";
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#tab_gallery dd #galleryList #wrap #list li div:hover a > img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+#tab_gallery dd #galleryList #wrap #list li .div:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  top: -10px;
+  left: 50%;
+  z-index: 0;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(45deg);
+}
+#tab_gallery dd #galleryList #wrap #list li .div:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: -14px;
+  left: 54%;
+  z-index: 5;
+  border-radius: 50% 50%;
+  background: #000;
+}
+#tab_gallery dd .vidList {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
 }
-#tab dd .vidList article {
+#tab_gallery dd .vidList article {
   width: 30%;
   height: 350px;
   margin: 0 15px;
   margin-top: 80px;
 }
-#tab dd .vidList article .pic {
+#tab_gallery dd .vidList article .pic {
   display: block;
   width: 100%;
   height: 60%;
 }
-#tab dd .vidList article .pic img {
+#tab_gallery dd .vidList article .pic img {
   width: 100%;
   height: 100%;
   border-radius: 5%;
   object-fit: cover;
 }
-#tab dd .vidList article .con {
+#tab_gallery dd .vidList article .con {
   width: 100%;
   height: 20%;
   padding: 20px;
 }
-#tab dd .vidList article .con h2 {
+#tab_gallery dd .vidList article .con h2 {
   font: bold 20px/1.2 "Lora";
   color: #fff;
   margin-bottom: 15px;
 }
-#tab dd .vidList article .con p {
+#tab_gallery dd .vidList article .con p {
   font: 14px/1.4 "Lora";
   color: #fff;
   margin-bottom: 20px;
 }
-#tab dd .vidList article .con span {
+#tab_gallery dd .vidList article .con span {
   font: bold 16px/1 "Lora";
   color: #fff;
 }
-#tab dd .vidList figure.pop {
+#tab_gallery dd .vidList figure.pop {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -805,60 +878,69 @@ table {
   padding: 5vw;
   overflow: hidden;
 }
-#tab dd .vidList figure.pop .btnClose {
+#tab_gallery dd .vidList figure.pop .btnClose {
   position: absolute;
   top: 50px;
   right: 50px;
   color: #fff;
   cursor: pointer;
 }
-#tab dd.on {
+#tab_gallery dd.on {
   display: block;
 }
 
+@keyframes swing {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
 @media screen and (max-width: 1179px) {
-  #tab {
+  #tab_gallery {
     width: 100%;
-    height: 100%;
+    height: 3000px;
     padding-top: 40px;
     margin: 100px auto;
     position: relative;
     opacity: 90%;
   }
-  #tab dd {
+  #tab_gallery dd {
     width: 100%;
     height: 100%;
     background: #000;
     display: none;
     text-align: center;
   }
-  #tab dd .vidList {
+  #tab_gallery dd .vidList {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
   }
-  #tab dd .vidList article {
+  #tab_gallery dd .vidList article {
     width: 400px;
     height: 300px;
     margin: 70px 50px;
     margin-top: 80px;
   }
-  #tab dd .vidList article .pic {
+  #tab_gallery dd .vidList article .pic {
     width: 100%;
     height: 70%;
   }
-  #tab dd .vidList article .pic img {
+  #tab_gallery dd .vidList article .pic img {
     width: 100%;
     height: 100%;
   }
-  #tab dd .vidList article .con {
+  #tab_gallery dd .vidList article .con {
     width: 100%;
     height: 20%;
     padding: 20px;
   }
-  #tab dd .vidList figure.pop {
+  #tab_gallery dd .vidList figure.pop {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -871,7 +953,7 @@ table {
     padding: 5vw;
     overflow: hidden;
   }
-  #tab dd .vidList figure.pop .btnClose {
+  #tab_gallery dd .vidList figure.pop .btnClose {
     position: absolute;
     top: 20px;
     right: 50px;
@@ -879,43 +961,113 @@ table {
     font-size: 20px;
     cursor: pointer;
   }
-  #tab dd.on {
+  #tab_gallery dd.on {
     display: block;
   }
 }
 @media screen and (max-width: 539px) {
-  #tab {
+  #tab_gallery {
+    width: 100%;
+    height: 5500px;
+  }
+  #tab_gallery dd {
     width: 100%;
     height: 100%;
   }
-  #tab dd {
-    width: 100%;
-    height: 100%;
-  }
-  #tab dd .vidList {
-    width: 100%;
-    height: 100%;
-  }
-  #tab dd .vidList article {
+  #tab_gallery dd #galleryList #wrap {
     width: 100%;
     height: 350px;
-    margin: 20px 40px;
+    padding: 50px;
+  }
+  #tab_gallery dd #galleryList #wrap #list {
+    width: 100%;
+    opacity: 0;
+  }
+  #tab_gallery dd #galleryList #wrap #list.on {
+    opacity: 1;
+  }
+  #tab_gallery dd #galleryList #wrap #list::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #tab_gallery dd #galleryList #wrap #list li {
+    width: 100%;
+    float: left;
+    padding: 10px;
+  }
+  #tab_gallery dd #galleryList #wrap #list li div {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(254, 252, 252, 0.968);
+    border-radius: 5px;
+    transform-origin: center -20px;
+  }
+  #tab_gallery dd #galleryList #wrap #list li div a > img {
+    width: 100%;
+    border-radius: 5%;
+    transition: 0.3s;
+    filter: grayscale(100%);
+    border: 5px solid #f8f8f8;
+  }
+  #tab_gallery dd #galleryList #wrap #list li div p {
+    font: 11px/1.2 "Lora";
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #tab_gallery dd #galleryList #wrap #list li div:hover a > img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+  #tab_gallery dd #galleryList #wrap #list li .div:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    top: -10px;
+    left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+  }
+  #tab_gallery dd #galleryList #wrap #list li .div:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: -14px;
+    left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+  }
+  #tab_gallery dd .vidList {
+    width: 100%;
+    height: 100%;
+  }
+  #tab_gallery dd .vidList article {
+    width: 100%;
+    height: 350px;
+    margin: 20px 80px;
     margin-top: 80px;
   }
-  #tab dd .vidList article .pic {
+  #tab_gallery dd .vidList article .pic {
     width: 100%;
     height: 60%;
   }
-  #tab dd .vidList article .pic img {
+  #tab_gallery dd .vidList article .pic img {
     width: 100%;
     height: 100%;
   }
-  #tab dd .vidList article .con {
+  #tab_gallery dd .vidList article .con {
     width: 100%;
     height: 20%;
     padding: 20px;
   }
-  #tab dd .vidList figure.pop {
+  #tab_gallery dd .vidList figure.pop {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -928,14 +1080,14 @@ table {
     padding: 5vw;
     overflow: hidden;
   }
-  #tab dd .vidList figure.pop .btnClose {
+  #tab_gallery dd .vidList figure.pop .btnClose {
     position: absolute;
     top: 20px;
     right: 15px;
     color: #fff;
     cursor: pointer;
   }
-  #tab dd.on {
+  #tab_gallery dd.on {
     display: block;
   }
 }
@@ -1767,7 +1919,7 @@ aside .container .content .btnClose {
     width: 70vw;
     height: 70vh;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, 200%);
     display: none;
