@@ -1515,6 +1515,81 @@ table {
   text-align: center;
 }
 
+aside {
+  width: 70vw;
+  height: 70vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 300%);
+  display: none;
+}
+aside .top {
+  width: 0%;
+  height: 1px;
+  background: #111;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+aside .right {
+  width: 1px;
+  height: 0%;
+  background: #111;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+aside .bottom {
+  width: 0%;
+  height: 1px;
+  background: #111;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+aside .left {
+  width: 1px;
+  height: 0%;
+  background: #111;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+aside .container {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px;
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+aside .container .pic {
+  width: 30%;
+}
+aside .container .content {
+  width: 65%;
+}
+aside .container .content h2 {
+  font: normal 5vw/1 "Lora";
+  color: #fff;
+  margin-bottom: 20px;
+}
+aside .container .content p {
+  font: 16px/1.3 "Lora";
+  color: #666;
+}
+aside .container .content .btnClose {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
 #news {
   width: 100%;
   margin: 0 auto;
@@ -1758,81 +1833,6 @@ table {
   color: black;
 }
 
-aside {
-  width: 70vw;
-  height: 70vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 300%);
-  display: none;
-}
-aside .top {
-  width: 0%;
-  height: 1px;
-  background: #111;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-aside .right {
-  width: 1px;
-  height: 0%;
-  background: #111;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-aside .bottom {
-  width: 0%;
-  height: 1px;
-  background: #111;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-aside .left {
-  width: 1px;
-  height: 0%;
-  background: #111;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-aside .container {
-  width: 100%;
-  height: 100%;
-  background: #000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 50px;
-  opacity: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-aside .container .pic {
-  width: 30%;
-}
-aside .container .content {
-  width: 65%;
-}
-aside .container .content h2 {
-  font: normal 5vw/1 "Lora";
-  color: #fff;
-  margin-bottom: 20px;
-}
-aside .container .content p {
-  font: 16px/1.3 "Lora";
-  color: #666;
-}
-aside .container .content .btnClose {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-}
-
 @media screen and (max-width: 1179px) {
   #header {
     width: 100%;
@@ -1921,7 +1921,7 @@ aside .container .content .btnClose {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 200%);
+    transform: translate(-50%, 300%);
     display: none;
   }
   aside .top {
@@ -2085,7 +2085,7 @@ aside .container .content .btnClose {
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, 200%);
+    transform: translate(-50%, 320%);
     display: none;
   }
   aside .top {
