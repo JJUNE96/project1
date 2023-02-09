@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-    <title>JOIN</title>
+    <title>sub_page</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icon.png" >
     <!-- Link Swiper's CSS -->
@@ -12,15 +12,16 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>  
     <script src="https://kit.fontawesome.com/c12878d3ba.js" crossorigin="anonymous"></script>
     <script defer src="main.js"></script>
-    <script defer src="anime.js"></script>
-   
+    <script defer src="location.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1e63d814a9d64d6f694fedeaece627d6"></script>
+
 </head>
 
 <body>
     <header id="header_sub">
         <div class="categories">
-          <a href="index.html" class="logo">
-            JUNE          
+            <a href="index.html" class="logo">
+             JUNE          
             </a>
               <nav class="nav_web">
                 <ul id="gnb">
@@ -28,13 +29,18 @@
                     
                    
                     <li>
-                        <a href="gallery.html">GALLERY</a>
-                       
-                    </li>
+                      <a href="gallery.html">GALLERY</a>
+                  </li>
+
 
                     <li>
                         <a href="board.html">BOARD</a>
-                       
+                        <!-- <div class="sub_menu1">
+                            <ul>
+                              <li><a href="#">NOTICE</a></li>
+                              <li><a href="#">FAQ</a></li>
+                            </ul>
+                          </div> -->
                     </li>
                    
                    
@@ -46,7 +52,7 @@
 
                 <ul class="util">
                     <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                    <li><a href="location.html"><i class="fa-regular fas fa-location-dot"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fas fa-location-dot"></i></a></li>
                     <li><a href="#">Login</a></li>
                   </ul>
               </nav>  
@@ -60,36 +66,47 @@
           <nav class="nav_mo">
            
             <ul id="gnb_mo">
-                <li><a href="project1.html">ABOUT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
                 
               
+                 
                 <li>
-                    <a href="gallery.html">GALLERY</a>
-                    
-                </li>
+                  <a href="gallery.html">GALLERY</a>
+              </li>
+
 
                 <li>
                     <a href="board.html">BOARD</a>
-                   
+                    <!-- <div class="sub_menu1">
+                        <ul>
+                          <li><a href="#">NOTICE</a></li>
+                          <li><a href="#">FAQ</a></li>
+                        </ul>
+                      </div> -->
                 </li>
               
               
                 <li><a href="news.html">NEWS</a></li>
 
-                <li><a href="project2.html">JOIN</a></li>
+                <li><a href="join.html">JOIN</a></li>
             </ul>
           </nav>
         </div>
 </header>
 
  
-<section class="sub_content join">
+<section class="sub_content location">
   <div class="sub_visual"></div>
   <div class="inner">
-    <h1>JOIN <span>회원가입</span></h1>
-
-    <p>회원가입을 축하합니다.</p>
-</div>
+    <h1>LOCATION <span>찾아오시는길</span></h1>
+      <div id="map"></div>
+      
+      <ul class="traffic">
+        <li><a href="#">교통정보 보기</a></li>
+        <li class="on"><a href="#">교통정보 끄기</a></li>
+      </ul>
+     
+  </div>
 
 </section>
 
