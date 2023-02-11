@@ -11,7 +11,6 @@
     <script src="https://kit.fontawesome.com/c12878d3ba.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script defer src="gallery.js"></script>
-    <script defer src="youtube.js"></script>
     <script defer src="flickr.js"></script>
    
 </head>
@@ -38,7 +37,7 @@
                     </li>
                    
                    
-                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
 
                     <li><a href="join.html">JOIN</a></li>
                 </ul>
@@ -74,7 +73,7 @@
                 </li>
               
               
-                <li><a href="news.html">NEWS</a></li>
+                <li><a href="youtube.html">YOUTUBE</a></li>
 
                 <li><a href="join.html">JOIN</a></li>
             </ul>
@@ -88,42 +87,31 @@
   <div class="inner">
     <h1>GALLERY <span>갤러리</span></h1>
 
-    <dl id="tab_gallery">
-      <dt class="on"><a href="#">Gallery</a></dt>
-      <dd class="on">
+    <!-- <dl id="tab_gallery">
+      <dt class="on"><a href="#">Asia</a></dt>
+      <dd class="on"> -->
         <div id="galleryList">
-          <article id="wrap">
+            <section id="searchBox">
+              <input type="text" id="search" placeholder="검색어 입력">
+              <button class="btnSearch">Search</button>
+            </section>
+            <article id="wrap">
+              <img src="img/load3.png" class="loading" alt="">
             <ul id="list">
-   <!-- <li class="item">
-            <div>
-                <a href="큰이미지 주소"><img src="썸네일주소" alt=""></a>
-                <p>이미지제목</p>
-            </div>
-        </li> -->
+              <!-- <li class="item">
+                <div>
+                  <a href=${imgSrcBig}>
+                    <img class="thumb" src=${imgSrc}>
+                  </a>
+                  <p>${el.title}
+                  </p>
+                </div>
+              </li> -->
+            
             </ul>
-          </article>
+            </article>
         </div>
-      </dd>
-  
-      <dt ><a href="#">Youtube</a></dt>
-      <dd>
-        <div class="vidList">
-          <!-- <article>
-            <a href="">
-              <img src="" alt="">
-            </a>
-            <div class="con">
-              <h2></h2>
-              <p></p>
-              <span></span>
-            </div>
-          </article> -->
-  
-          <!-- figure -->
-        </div>
-      </dd>
-  
-    </dl>
+    
 
 </div>
 

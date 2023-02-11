@@ -708,97 +708,103 @@ table {
   margin-top: 5px;
 }
 
-#tab_gallery {
+.gallery {
   width: 100%;
-  height: 2000px;
-  padding-top: 40px;
-  margin: 100px auto;
+  height: 2200px;
   position: relative;
   opacity: 90%;
 }
-#tab_gallery dt {
-  border: 2px solid #000;
-  width: 50%;
-  height: 45px;
-  position: absolute;
-  top: 0;
+.gallery h1 {
+  margin-left: 70px;
 }
-#tab_gallery dt:nth-of-type(1) {
-  left: 0%;
+.gallery #galleryList {
+  height: 1600px;
 }
-#tab_gallery dt:nth-of-type(2) {
-  left: 50%;
-}
-#tab_gallery dt a {
-  display: block;
+.gallery #galleryList #searchBox {
   width: 100%;
-  height: 100%;
+  margin-left: 700px;
+  font-size: 0;
+}
+.gallery #galleryList #searchBox input[type=text] {
+  width: 300px;
+  height: 30px;
   background: #fff;
-  font: bold 19px/40px "Lora";
-  color: #000;
-  text-align: center;
+  border: 1px solid #000;
+  padding-left: 10px;
+  margin-top: 50px;
 }
-#tab_gallery dt.on a {
+.gallery #galleryList #searchBox .btnSearch {
+  width: 80px;
+  height: 30px;
   background: #000;
+  font: bold 12px/30px "arial";
+  text-align: center;
   color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 10px;
+  vertical-align: top;
 }
-#tab_gallery dd {
-  width: 100%;
-  height: 2000px;
-  background: #000;
-  display: none;
-  text-align: center;
-}
-#tab_gallery dd #galleryList {
-  height: 1400px;
-}
-#tab_gallery dd #galleryList #wrap {
+.gallery #galleryList #wrap {
   width: 100%;
   height: 350px;
   padding: 50px;
 }
-#tab_gallery dd #galleryList #wrap #list {
+.gallery #galleryList #wrap .loading {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  opacity: 1;
+}
+.gallery #galleryList #wrap .loading.off {
+  opacity: 0;
+}
+.gallery #galleryList #wrap #list {
   width: 100%;
   opacity: 0;
 }
-#tab_gallery dd #galleryList #wrap #list.on {
+.gallery #galleryList #wrap #list.on {
   opacity: 1;
 }
-#tab_gallery dd #galleryList #wrap #list::after {
+.gallery #galleryList #wrap #list::after {
   content: "";
   display: block;
   clear: both;
 }
-#tab_gallery dd #galleryList #wrap #list li {
+.gallery #galleryList #wrap #list li {
   width: 33.3333333333%;
   float: left;
   padding: 10px;
 }
-#tab_gallery dd #galleryList #wrap #list li div {
+.gallery #galleryList #wrap #list li div {
   width: 100%;
   padding: 20px;
-  box-shadow: 5px 5px 10px rgba(254, 252, 252, 0.968);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   transform-origin: center -20px;
 }
-#tab_gallery dd #galleryList #wrap #list li div a > img {
+.gallery #galleryList #wrap #list li div a > img {
   width: 100%;
   border-radius: 5%;
   transition: 0.3s;
   filter: grayscale(100%);
-  border: 5px solid #f8f8f8;
+  border: 5px solid #000;
 }
-#tab_gallery dd #galleryList #wrap #list li div p {
+.gallery #galleryList #wrap #list li div p {
   font: 18px/1.2 "Lora";
-  color: #fff;
+  color: #000;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#tab_gallery dd #galleryList #wrap #list li div:hover a > img {
+.gallery #galleryList #wrap #list li div:hover a > img {
   filter: grayscale(0%);
   transform: scale(1.1);
 }
-#tab_gallery dd #galleryList #wrap #list li .div:after {
+.gallery #galleryList #wrap #list li .div:after {
   content: "";
   position: absolute;
   width: 20px;
@@ -811,7 +817,7 @@ table {
   border-right: none;
   transform: rotate(45deg);
 }
-#tab_gallery dd #galleryList #wrap #list li .div:before {
+.gallery #galleryList #wrap #list li .div:before {
   content: "";
   position: absolute;
   width: 5px;
@@ -822,70 +828,28 @@ table {
   border-radius: 50% 50%;
   background: #000;
 }
-#tab_gallery dd .vidList {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-start;
-}
-#tab_gallery dd .vidList article {
-  width: 30%;
-  height: 350px;
-  margin: 0 15px;
-  margin-top: 80px;
-}
-#tab_gallery dd .vidList article .pic {
-  display: block;
-  width: 100%;
-  height: 60%;
-}
-#tab_gallery dd .vidList article .pic img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5%;
-  object-fit: cover;
-}
-#tab_gallery dd .vidList article .con {
-  width: 100%;
-  height: 20%;
-  padding: 20px;
-}
-#tab_gallery dd .vidList article .con h2 {
-  font: bold 20px/1.2 "Lora";
-  color: #fff;
-  margin-bottom: 15px;
-}
-#tab_gallery dd .vidList article .con p {
-  font: 14px/1.4 "Lora";
-  color: #fff;
-  margin-bottom: 20px;
-}
-#tab_gallery dd .vidList article .con span {
-  font: bold 16px/1 "Lora";
-  color: #fff;
-}
-#tab_gallery dd .vidList figure.pop {
+.gallery #galleryList aside {
   width: 100%;
   height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5vw;
-  overflow: hidden;
 }
-#tab_gallery dd .vidList figure.pop .btnClose {
+.gallery #galleryList aside img {
+  height: 100%;
+}
+.gallery #galleryList aside span {
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 20px;
+  right: 20px;
   color: #fff;
   cursor: pointer;
 }
-#tab_gallery dd.on {
+.gallery.on {
   display: block;
 }
 
@@ -895,200 +859,6 @@ table {
   }
   100% {
     transform: rotate(-1deg);
-  }
-}
-@media screen and (max-width: 1179px) {
-  #tab_gallery {
-    width: 100%;
-    height: 3000px;
-    padding-top: 40px;
-    margin: 100px auto;
-    position: relative;
-    opacity: 90%;
-  }
-  #tab_gallery dd {
-    width: 100%;
-    height: 100%;
-    background: #000;
-    display: none;
-    text-align: center;
-  }
-  #tab_gallery dd .vidList {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: flex-start;
-  }
-  #tab_gallery dd .vidList article {
-    width: 400px;
-    height: 300px;
-    margin: 70px 50px;
-    margin-top: 80px;
-  }
-  #tab_gallery dd .vidList article .pic {
-    width: 100%;
-    height: 70%;
-  }
-  #tab_gallery dd .vidList article .pic img {
-    width: 100%;
-    height: 100%;
-  }
-  #tab_gallery dd .vidList article .con {
-    width: 100%;
-    height: 20%;
-    padding: 20px;
-  }
-  #tab_gallery dd .vidList figure.pop {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5vw;
-    overflow: hidden;
-  }
-  #tab_gallery dd .vidList figure.pop .btnClose {
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  #tab_gallery dd.on {
-    display: block;
-  }
-}
-@media screen and (max-width: 539px) {
-  #tab_gallery {
-    width: 100%;
-    height: 5500px;
-  }
-  #tab_gallery dd {
-    width: 100%;
-    height: 100%;
-  }
-  #tab_gallery dd #galleryList #wrap {
-    width: 100%;
-    height: 350px;
-    padding: 50px;
-  }
-  #tab_gallery dd #galleryList #wrap #list {
-    width: 100%;
-    opacity: 0;
-  }
-  #tab_gallery dd #galleryList #wrap #list.on {
-    opacity: 1;
-  }
-  #tab_gallery dd #galleryList #wrap #list::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  #tab_gallery dd #galleryList #wrap #list li {
-    width: 100%;
-    float: left;
-    padding: 10px;
-  }
-  #tab_gallery dd #galleryList #wrap #list li div {
-    width: 100%;
-    padding: 20px;
-    box-shadow: 5px 5px 10px rgba(254, 252, 252, 0.968);
-    border-radius: 5px;
-    transform-origin: center -20px;
-  }
-  #tab_gallery dd #galleryList #wrap #list li div a > img {
-    width: 100%;
-    border-radius: 5%;
-    transition: 0.3s;
-    filter: grayscale(100%);
-    border: 5px solid #f8f8f8;
-  }
-  #tab_gallery dd #galleryList #wrap #list li div p {
-    font: 11px/1.2 "Lora";
-    color: #fff;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  #tab_gallery dd #galleryList #wrap #list li div:hover a > img {
-    filter: grayscale(0%);
-    transform: scale(1.1);
-  }
-  #tab_gallery dd #galleryList #wrap #list li .div:after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #999;
-    top: -10px;
-    left: 50%;
-    z-index: 0;
-    border-bottom: none;
-    border-right: none;
-    transform: rotate(45deg);
-  }
-  #tab_gallery dd #galleryList #wrap #list li .div:before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    top: -14px;
-    left: 54%;
-    z-index: 5;
-    border-radius: 50% 50%;
-    background: #000;
-  }
-  #tab_gallery dd .vidList {
-    width: 100%;
-    height: 100%;
-  }
-  #tab_gallery dd .vidList article {
-    width: 100%;
-    height: 350px;
-    margin: 20px 80px;
-    margin-top: 80px;
-  }
-  #tab_gallery dd .vidList article .pic {
-    width: 100%;
-    height: 60%;
-  }
-  #tab_gallery dd .vidList article .pic img {
-    width: 100%;
-    height: 100%;
-  }
-  #tab_gallery dd .vidList article .con {
-    width: 100%;
-    height: 20%;
-    padding: 20px;
-  }
-  #tab_gallery dd .vidList figure.pop {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5vw;
-    overflow: hidden;
-  }
-  #tab_gallery dd .vidList figure.pop .btnClose {
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    color: #fff;
-    cursor: pointer;
-  }
-  #tab_gallery dd.on {
-    display: block;
   }
 }
 .about {
@@ -1138,9 +908,44 @@ table {
   .about .inner {
     width: 100%;
     margin: 0 auto;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  }
+  .about .inner .image {
+    margin-top: 50px;
+  }
+  .about .inner .image .about-image {
+    width: 330px;
+    height: 350px;
+    float: left;
+    margin: 20px;
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+  }
+  .about .inner .image .about-image img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .about .inner .image .about-image .image-title-wrapper {
+    padding: 20px;
+    margin-top: 0px;
+    background: #000;
+  }
+  .about .inner .image .about-image .image-title-wrapper p {
+    font: 20px "Lora";
+    color: #fff;
+  }
+}
+@media screen and (max-width: 539px) {
+  .about {
+    width: 100%;
+  }
+  .about h1 {
+    margin-left: 100px;
+  }
+  .about .inner {
+    width: 100%;
+    margin: 0 auto;
   }
   .about .inner .image {
     margin-top: 50px;
@@ -1297,6 +1102,71 @@ table {
     color: #000;
   }
 }
+.vidList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.vidList article {
+  width: 30%;
+  height: 350px;
+  margin: 0 15px;
+  margin-top: 80px;
+}
+.vidList article .pic {
+  display: block;
+  width: 100%;
+  height: 60%;
+}
+.vidList article .pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  object-fit: cover;
+}
+.vidList article .con {
+  width: 100%;
+  height: 20%;
+  padding: 20px;
+}
+.vidList article .con h2 {
+  font: bold 20px/1.2 "Lora";
+  color: #000;
+  margin-bottom: 15px;
+}
+.vidList article .con p {
+  font: 14px/1.4 "Lora";
+  color: #000;
+  margin-bottom: 20px;
+}
+.vidList article .con span {
+  font: bold 16px/1 "Lora";
+  float: right;
+  color: #000;
+}
+.vidList figure.pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
+  overflow: hidden;
+}
+.vidList figure.pop .btnClose {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
 #header {
   width: 100%;
   position: fixed;
@@ -1504,6 +1374,7 @@ table {
   margin-right: 50px;
   display: flex;
   align-items: flex-end;
+  background: #fff;
 }
 #gallery .inner #tab main nav ul {
   width: 100%;
@@ -1515,15 +1386,28 @@ table {
 #gallery .inner #tab main nav ul li a {
   display: table;
   width: 100%;
-  height: 100%;
+  height: 40%;
   font: bold 16px/1 "Lora";
-  color: black;
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+#gallery .inner #tab main nav ul li:after {
+  display: block;
+  width: 90px;
+  margin-left: 40px;
+  content: "";
+  border-bottom: solid 3px #000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+#gallery .inner #tab main nav ul li:hover:after {
+  transform: scaleX(1);
+}
 #gallery .inner #tab main nav ul li.on a {
-  color: #bdb9b7;
+  color: #000;
+  line-height: #000;
 }
 #gallery .inner #tab main section {
   width: 100%;
@@ -1673,6 +1557,7 @@ table {
   font: normal 20px/1 "Lora";
   color: #888;
   margin-bottom: 20px;
+  line-height: 150%;
 }
 #board .inner .btnOpen {
   display: block;
@@ -1680,7 +1565,8 @@ table {
   height: 30px;
   border: 1px solid #000;
   font: bold 13px/30px "Lora";
-  color: black;
+  background: #000;
+  color: #fff;
   text-align: center;
 }
 
@@ -1790,9 +1676,10 @@ aside .container .content .btnClose {
   display: block;
   width: 100%;
   height: 30px;
-  border: 1px solid #bbb;
+  border: 1px solid #000;
+  background: #000;
   font: bold 13px/30px "Lora";
-  color: black;
+  color: #fff;
   text-align: center;
 }
 
@@ -1836,6 +1723,7 @@ aside .container .content .btnClose {
   height: 400px;
   object-fit: cover;
   transition: 0.5s;
+  border: 1px solid #ccc;
 }
 .swiper .swiper-wrapper .swiper-slide:hover img {
   transform: scale(1.2);

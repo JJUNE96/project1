@@ -10,6 +10,7 @@ $mobile: 539px;
 @import 'news.scss';
 @import 'about.scss';
 @import 'location.scss';
+@import 'youtube.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Nanum+Myeongjo&family=Ubuntu&display=swap');
 
@@ -237,27 +238,46 @@ $mobile: 539px;
                     margin-right: 50px;
                     display: flex;
                     align-items: flex-end;
+                    //border: 1px solid #000;
+                    background: #fff;
                     ul{
                         width: 100%;
                         li{
                             width: 100%;
                             height: 125px;
+                            
                             a{
                                 display: table;
                                 width: 100%;
-                                height: 100%;
+                                height: 40%;
                                 font: bold 16px/1 'Lora';
-                                color: black;
+                                color: #000;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                             }
-                            &.on {
+                            &:after {
+                                display:block;
+                               width: 90px;
+                               margin-left: 40px;
+                                content: '';
+                                border-bottom: solid 3px #000;
+                                transform: scaleX(0);
+                                transition: transform 250ms ease-in-out;
+                             }
+                             &:hover:after {
+                                transform: scaleX(1);
+                             }
+                           
+                              &.on {
                                 a {
-                                    color:#bdb9b7;     
+                                    color:#000;  
+                                    line-height: #000;  
                                 }
                             }
                         }
+                        
+                        
                     }
                 }
                 section {
@@ -416,6 +436,7 @@ a{
         background: white;
         opacity: 80%;
         transition: 1s 0.3s;
+        
         h1{
             font: bold 25px/1 'Lora';
 			color: black;
@@ -425,6 +446,7 @@ a{
             font: normal 20px/1 'Lora';
 			color: #888;
 			margin-bottom: 20px;
+            line-height:150%;
         }
         .btnOpen{
             display: block;
@@ -432,7 +454,8 @@ a{
 			height: 30px;
 			border: 1px solid #000;
 			font: bold 13px/30px 'Lora';
-			color: black;
+            background: #000;
+			color: #fff;
 			text-align: center;
         }
     }
@@ -544,9 +567,10 @@ aside {
 			width: 100%;
 			height: 30px;
             //text-decoration: underline;
-			border: 1px solid #bbb;
+			border: 1px solid #000;
+            background: #000;
 			font: bold 13px/30px 'Lora';
-			color: black;
+			color: #fff;
 			text-align: center;
         }   
       }
@@ -563,7 +587,8 @@ aside {
             height: 80%;
             top:200px;
             left: 200px;
-           overflow: hidden;
+            overflow: hidden;
+          
             .swiper-wrapper{
                 width: 100%;
                 height: 80%;
@@ -589,6 +614,7 @@ aside {
                     height: 400px;
                     object-fit: cover;
                     transition: 0.5s;
+                    border: 1px solid #ccc;
                    }
                    &:hover {
                                 img {
