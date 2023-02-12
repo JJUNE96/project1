@@ -1730,6 +1730,182 @@ table {
     cursor: pointer;
   }
 }
+.login {
+  height: 50vh;
+}
+.login .inner h1 {
+  margin-left: 100px;
+}
+.login .inner #sub_login {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.login .inner #sub_login table {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: left;
+}
+.login .inner #sub_login table tr {
+  width: 500px;
+}
+.login .inner #sub_login table tr th,
+.login .inner #sub_login table tr td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 25px;
+}
+.login .inner #sub_login table th {
+  width: 150px;
+}
+.login .inner #sub_login table th input[type=submit] {
+  width: 40%;
+  text-align: center;
+  height: 60px;
+  margin: 10px;
+  margin-left: 300px;
+  font: bold 18px/40px "arial";
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+}
+.login .inner #sub_login table td {
+  width: 800px;
+  border-left: 1px solid #fff;
+}
+.login .inner #sub_login table td input[type=text],
+.login .inner #sub_login table td input[type=password],
+.login .inner #sub_login table td select {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #fff;
+}
+.login .inner #sub_login table td p {
+  font: 11px/1 "맑은 고딕";
+  color: red;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1179px) {
+  .login {
+    height: 50vh;
+  }
+  .login .inner h1 {
+    margin-left: 100px;
+  }
+  .login .inner #sub_login {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .login .inner #sub_login table {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: left;
+  }
+  .login .inner #sub_login table tr {
+    width: 500px;
+  }
+  .login .inner #sub_login table tr th,
+  .login .inner #sub_login table tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 25px;
+  }
+  .login .inner #sub_login table th {
+    width: 250px;
+  }
+  .login .inner #sub_login table th input[type=submit] {
+    width: 40%;
+    text-align: center;
+    height: 60px;
+    margin: 10px;
+    margin-left: 200px;
+    font: bold 18px/40px "arial";
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+  }
+  .login .inner #sub_login table td {
+    width: 800px;
+    border-left: 1px solid #fff;
+  }
+  .login .inner #sub_login table td input[type=text],
+  .login .inner #sub_login table td input[type=password],
+  .login .inner #sub_login table td select {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  .login .inner #sub_login table td p {
+    font: 11px/1 "맑은 고딕";
+    color: red;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .login {
+    height: 50vh;
+  }
+  .login .inner h1 {
+    margin-left: 100px;
+  }
+  .login .inner #sub_login {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .login .inner #sub_login table {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: left;
+  }
+  .login .inner #sub_login table tr {
+    width: 500px;
+  }
+  .login .inner #sub_login table tr th,
+  .login .inner #sub_login table tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 25px;
+  }
+  .login .inner #sub_login table th {
+    width: 200px;
+  }
+  .login .inner #sub_login table th input[type=submit] {
+    width: 60%;
+    text-align: center;
+    height: 60px;
+    margin: 10px;
+    margin-left: 100px;
+    font: bold 18px/40px "arial";
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+  }
+  .login .inner #sub_login table td {
+    width: 800px;
+    border-left: 1px solid #fff;
+  }
+  .login .inner #sub_login table td input[type=text],
+  .login .inner #sub_login table td input[type=password],
+  .login .inner #sub_login table td select {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  .login .inner #sub_login table td p {
+    font: 11px/1 "맑은 고딕";
+    color: red;
+    margin-top: 5px;
+  }
+}
 #header {
   width: 100%;
   position: fixed;

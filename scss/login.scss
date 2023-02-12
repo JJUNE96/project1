@@ -1,0 +1,201 @@
+.login{
+    height:50vh;
+    .inner{
+        h1{
+            margin-left: 100px;
+        }
+      #sub_login{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        table {
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            //margin: 0 200px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            text-align: left;
+            tr{
+                width: 500px;
+                th,
+                td {
+                    border-bottom: 1px solid #ddd;
+                    padding: 15px 25px;
+                } 
+            }
+            
+            th {
+               width: 150px;
+                input[type='submit'] {
+                    width: 40%;
+                    text-align: center;
+                    height: 60px;
+                    margin: 10px;
+                   // margin-top: 100px;
+                    margin-left: 300px;
+                    font: bold 18px/40px 'arial';
+                    color: #fff;
+                    background: #000;
+                    cursor: pointer;
+                    
+                }
+            }
+            td {
+                width:800px;
+                border-left: 1px solid #fff;
+                input[type='text'],
+                input[type='password'],
+                select {
+                    width: 100%;
+                    background: rgba(0, 0, 0, 0.03);
+                    padding: 10px;
+                    border: 1px solid #fff;
+                }
+                p {
+                    font: 11px/1 '맑은 고딕';
+                    color: red;
+                    margin-top: 5px;
+                }
+            }
+        }
+      }
+       
+    }
+   }
+
+   
+@media screen and (max-width: $tablet) {
+    .login{
+        height:50vh;
+        .inner{
+            h1{
+                margin-left: 100px;
+            }
+          #sub_login{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            table {
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                //margin: 0 200px;
+                margin-bottom: 50px;
+                margin-top: 50px;
+                text-align: left;
+                tr{
+                    width: 500px;
+                    th,
+                    td {
+                        border-bottom: 1px solid #ddd;
+                        padding: 15px 25px;
+                    } 
+                }
+                
+                th {
+                   width: 250px;
+                    input[type='submit'] {
+                        width: 40%;
+                        text-align: center;
+                        height: 60px;
+                        margin: 10px;
+                       // margin-top: 100px;
+                        margin-left: 200px;
+                        font: bold 18px/40px 'arial';
+                        color: #fff;
+                        background: #000;
+                        cursor: pointer;
+                        
+                    }
+                }
+                td {
+                    width:800px;
+                    border-left: 1px solid #fff;
+                    input[type='text'],
+                    input[type='password'],
+                    select {
+                        width: 100%;
+                        background: rgba(0, 0, 0, 0.03);
+                        padding: 10px;
+                        border: 1px solid #fff;
+                    }
+                    p {
+                        font: 11px/1 '맑은 고딕';
+                        color: red;
+                        margin-top: 5px;
+                    }
+                }
+            }
+          }
+           
+        }
+       }
+}
+
+
+@media screen and (max-width: $mobile) {
+	.login{
+        height:50vh;
+        .inner{
+            h1{
+                margin-left: 100px;
+            }
+          #sub_login{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            table {
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                //margin: 0 200px;
+                margin-bottom: 50px;
+                margin-top: 50px;
+                text-align: left;
+                tr{
+                    width: 500px;
+                    th,
+                    td {
+                        border-bottom: 1px solid #ddd;
+                        padding: 15px 25px;
+                    } 
+                }
+                
+                th {
+                   width: 200px;
+                    input[type='submit'] {
+                        width: 60%;
+                        text-align: center;
+                        height: 60px;
+                        margin: 10px;
+                       // margin-top: 100px;
+                        margin-left: 100px;
+                        font: bold 18px/40px 'arial';
+                        color: #fff;
+                        background: #000;
+                        cursor: pointer;
+                        
+                    }
+                }
+                td {
+                    width:800px;
+                    border-left: 1px solid #fff;
+                    input[type='text'],
+                    input[type='password'],
+                    select {
+                        width: 100%;
+                        background: rgba(0, 0, 0, 0.03);
+                        padding: 10px;
+                        border: 1px solid #fff;
+                    }
+                    p {
+                        font: 11px/1 '맑은 고딕';
+                        color: red;
+                        margin-top: 5px;
+                    }
+                }
+            }
+          }
+           
+        }
+       }
+}
+   
