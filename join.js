@@ -91,7 +91,6 @@
 		let inputs = form.querySelectorAll(`[name=${el}]`);
 		let isCheck = false;
 	
-		//inputs배열을 반복을 돌면서 체크가 되어있는지를 살피고 체크가 되어있다면 false를 true로 변경
 		for (let el of inputs) {
 			if (el.checked) isCheck = true;
 		}
