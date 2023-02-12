@@ -112,7 +112,7 @@ table {
 }
 #header_sub .categories .btnCall {
   position: absolute;
-  top: 9%;
+  top: 8%;
   right: 30px;
   transform: translateY(-50%);
   width: 20px;
@@ -708,6 +708,144 @@ table {
   margin-top: 5px;
 }
 
+@media screen and (max-width: 1179px) {
+  .join {
+    height: 130vh;
+  }
+  .join .inner h1 {
+    margin-left: 100px;
+  }
+  .join .inner #member {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .join .inner #member table {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: left;
+  }
+  .join .inner #member table tr {
+    width: 500px;
+  }
+  .join .inner #member table tr th,
+  .join .inner #member table tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 25px;
+  }
+  .join .inner #member table th {
+    width: 200px;
+  }
+  .join .inner #member table th input[type=submit] {
+    width: 100%;
+    height: 60px;
+    margin: 10px;
+    font: bold 18px/40px "arial";
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+  }
+  .join .inner #member table td {
+    width: 800px;
+    border-left: 1px solid #fff;
+  }
+  .join .inner #member table td input[type=text],
+  .join .inner #member table td input[type=password],
+  .join .inner #member table td select {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  .join .inner #member table td input[type=radio],
+  .join .inner #member table td input[type=checkbox] {
+    margin-right: 30px;
+  }
+  .join .inner #member table td textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid #000;
+  }
+  .join .inner #member table td p {
+    font: 11px/1 "맑은 고딕";
+    color: red;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .join {
+    height: 130vh;
+  }
+  .join .inner h1 {
+    margin-left: 20px;
+  }
+  .join .inner #member {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .join .inner #member table {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: left;
+  }
+  .join .inner #member table tr {
+    width: 500px;
+  }
+  .join .inner #member table tr th,
+  .join .inner #member table tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 25px;
+  }
+  .join .inner #member table th {
+    width: 200px;
+  }
+  .join .inner #member table th input[type=submit] {
+    width: 100%;
+    height: 60px;
+    margin: 10px;
+    font: bold 18px/40px "arial";
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+  }
+  .join .inner #member table td {
+    width: 800px;
+    border-left: 1px solid #fff;
+  }
+  .join .inner #member table td input[type=text],
+  .join .inner #member table td input[type=password],
+  .join .inner #member table td select {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  .join .inner #member table td input[type=radio],
+  .join .inner #member table td input[type=checkbox] {
+    margin-right: 30px;
+  }
+  .join .inner #member table td textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid #000;
+  }
+  .join .inner #member table td p {
+    font: 11px/1 "맑은 고딕";
+    color: red;
+    margin-top: 5px;
+  }
+}
 .gallery {
   width: 100%;
   height: 2200px;
@@ -722,20 +860,20 @@ table {
 }
 .gallery #galleryList #searchBox {
   width: 100%;
-  margin-left: 700px;
+  margin-left: 70px;
   font-size: 0;
 }
 .gallery #galleryList #searchBox input[type=text] {
-  width: 300px;
-  height: 30px;
+  width: 15vw;
+  height: 3vh;
   background: #fff;
   border: 1px solid #000;
   padding-left: 10px;
   margin-top: 50px;
 }
 .gallery #galleryList #searchBox .btnSearch {
-  width: 80px;
-  height: 30px;
+  width: 5vw;
+  height: 3vh;
   background: #000;
   font: bold 12px/30px "arial";
   text-align: center;
@@ -754,9 +892,9 @@ table {
 .gallery #galleryList #wrap .loading {
   width: 100px;
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-20%, -50%);
   transition: 1s;
   opacity: 1;
 }
@@ -828,7 +966,7 @@ table {
   border-radius: 50% 50%;
   background: #000;
 }
-.gallery #galleryList aside {
+.gallery #galleryList aside2 {
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
@@ -839,10 +977,10 @@ table {
   justify-content: center;
   align-items: center;
 }
-.gallery #galleryList aside img {
+.gallery #galleryList aside2 img {
   height: 100%;
 }
-.gallery #galleryList aside span {
+.gallery #galleryList aside2 span {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -859,6 +997,297 @@ table {
   }
   100% {
     transform: rotate(-1deg);
+  }
+}
+@media screen and (max-width: 1179px) {
+  .gallery {
+    width: 100%;
+    height: 2200px;
+    position: relative;
+    opacity: 90%;
+  }
+  .gallery h1 {
+    margin-left: 70px;
+  }
+  .gallery #galleryList {
+    height: 1600px;
+  }
+  .gallery #galleryList #searchBox {
+    width: 60vw;
+    font-size: 0;
+  }
+  .gallery #galleryList #searchBox input[type=text] {
+    width: 25vw;
+    height: 3vh;
+    background: #fff;
+    border: 1px solid #000;
+    padding-left: 10px;
+    margin-top: 50px;
+  }
+  .gallery #galleryList #searchBox .btnSearch {
+    width: 10vw;
+    height: 3vh;
+    background: #000;
+    font: bold 12px/30px "arial";
+    text-align: center;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 10px;
+    vertical-align: top;
+  }
+  .gallery #galleryList #wrap {
+    width: 100%;
+    height: 350px;
+    padding: 50px;
+  }
+  .gallery #galleryList #wrap .loading {
+    width: 100px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    transition: 1s;
+    opacity: 1;
+  }
+  .gallery #galleryList #wrap .loading.off {
+    opacity: 0;
+  }
+  .gallery #galleryList #wrap #list {
+    width: 100%;
+    opacity: 0;
+  }
+  .gallery #galleryList #wrap #list.on {
+    opacity: 1;
+  }
+  .gallery #galleryList #wrap #list::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .gallery #galleryList #wrap #list li {
+    width: 33.3333333333%;
+    float: left;
+    padding: 10px;
+  }
+  .gallery #galleryList #wrap #list li div {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    transform-origin: center -20px;
+  }
+  .gallery #galleryList #wrap #list li div a > img {
+    width: 100%;
+    border-radius: 5%;
+    transition: 0.3s;
+    filter: grayscale(100%);
+    border: 5px solid #000;
+  }
+  .gallery #galleryList #wrap #list li div p {
+    font: 18px/1.2 "Lora";
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .gallery #galleryList #wrap #list li div:hover a > img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+  .gallery #galleryList #wrap #list li .div:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    top: -10px;
+    left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+  }
+  .gallery #galleryList #wrap #list li .div:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: -14px;
+    left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+  }
+  .gallery #galleryList aside2 {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery #galleryList aside2 img {
+    height: 100%;
+  }
+  .gallery #galleryList aside2 span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .gallery.on {
+    display: block;
+  }
+}
+@media screen and (max-width: 539px) {
+  .gallery {
+    width: 100%;
+    height: 2200px;
+    position: relative;
+    opacity: 90%;
+  }
+  .gallery h1 {
+    margin-left: 70px;
+  }
+  .gallery #galleryList {
+    height: 1600px;
+  }
+  .gallery #galleryList #searchBox {
+    width: 60vw;
+    margin-left: 130px;
+    font-size: 0;
+  }
+  .gallery #galleryList #searchBox input[type=text] {
+    width: 200px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #000;
+    padding-left: 10px;
+    margin-top: 50px;
+  }
+  .gallery #galleryList #searchBox .btnSearch {
+    width: 80px;
+    height: 30px;
+    background: #000;
+    font: bold 12px/30px "arial";
+    text-align: center;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 10px;
+    vertical-align: top;
+  }
+  .gallery #galleryList #wrap {
+    width: 100%;
+    height: 350px;
+    padding: 50px;
+  }
+  .gallery #galleryList #wrap .loading {
+    width: 100px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    transition: 1s;
+    opacity: 1;
+  }
+  .gallery #galleryList #wrap .loading.off {
+    opacity: 0;
+  }
+  .gallery #galleryList #wrap #list {
+    width: 100%;
+    opacity: 0;
+  }
+  .gallery #galleryList #wrap #list.on {
+    opacity: 1;
+  }
+  .gallery #galleryList #wrap #list::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .gallery #galleryList #wrap #list li {
+    width: 33.3333333333%;
+    float: left;
+    padding: 10px;
+  }
+  .gallery #galleryList #wrap #list li div {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    transform-origin: center -20px;
+  }
+  .gallery #galleryList #wrap #list li div a > img {
+    width: 100%;
+    border-radius: 5%;
+    transition: 0.3s;
+    filter: grayscale(100%);
+    border: 5px solid #000;
+  }
+  .gallery #galleryList #wrap #list li div p {
+    font: 10px/1.2 "Lora";
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .gallery #galleryList #wrap #list li div:hover a > img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+  .gallery #galleryList #wrap #list li .div:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    top: -10px;
+    left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+  }
+  .gallery #galleryList #wrap #list li .div:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: -14px;
+    left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+  }
+  .gallery #galleryList aside2 {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery #galleryList aside2 img {
+    height: 100%;
+  }
+  .gallery #galleryList aside2 span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .gallery.on {
+    display: block;
   }
 }
 .about {
@@ -1167,6 +1596,140 @@ table {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1179px) {
+  h1 {
+    margin-left: 30px;
+  }
+  .vidList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+  .vidList article {
+    width: 40%;
+    height: 350px;
+    margin: 0 35px;
+    margin-top: 80px;
+  }
+  .vidList article .pic {
+    display: block;
+    width: 100%;
+    height: 60%;
+  }
+  .vidList article .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    object-fit: cover;
+  }
+  .vidList article .con {
+    width: 100%;
+    height: 20%;
+    padding: 20px;
+  }
+  .vidList article .con h2 {
+    font: bold 20px/1.2 "Lora";
+    color: #000;
+    margin-bottom: 15px;
+  }
+  .vidList article .con p {
+    font: 14px/1.4 "Lora";
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .vidList article .con span {
+    font: bold 16px/1 "Lora";
+    float: right;
+    color: #000;
+  }
+  .vidList figure.pop {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    overflow: hidden;
+  }
+  .vidList figure.pop .btnClose {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 539px) {
+  h1 {
+    margin-left: 30px;
+  }
+  .vidList {
+    width: 100%;
+  }
+  .vidList article {
+    width: 100%;
+    height: 350px;
+    margin: 0 15px;
+    margin-top: 80px;
+  }
+  .vidList article .pic {
+    display: block;
+    width: 100%;
+    height: 60%;
+  }
+  .vidList article .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    object-fit: cover;
+  }
+  .vidList article .con {
+    width: 100%;
+    height: 20%;
+    padding: 20px;
+  }
+  .vidList article .con h2 {
+    font: bold 20px/1.2 "Lora";
+    color: #000;
+    margin-bottom: 15px;
+  }
+  .vidList article .con p {
+    font: 14px/1.4 "Lora";
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .vidList article .con span {
+    font: bold 16px/1 "Lora";
+    float: right;
+    color: #000;
+  }
+  .vidList figure.pop {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    overflow: hidden;
+  }
+  .vidList figure.pop .btnClose {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
 #header {
   width: 100%;
   position: fixed;
@@ -1849,13 +2412,15 @@ aside .container .content .btnClose {
 #footer .inner .tab .content {
   max-height: 0;
   transition: 1s;
+  margin-top: 15px;
   overflow: hidden;
 }
 #footer .inner .tab .content p {
   font-size: 15px;
+  text-align: left;
   line-height: 25px;
   position: relative;
-  padding: 15px 0;
+  padding: 15px 50px;
   color: #333;
   z-index: 10;
 }
@@ -1962,10 +2527,14 @@ aside .container .content .btnClose {
     width: 70vw;
   }
   #board .inner {
+    width: 40%;
+    margin: 0 auto;
+    padding: 15px 15px;
+    position: absolute;
+    transform: translate(-40%, 10%);
+    background: white;
     opacity: 80%;
-    width: 40vw;
-    height: 30vh;
-    transform: translate(-30%, 30%);
+    transition: 1s 0.3s;
   }
   #board .inner a {
     display: block;
@@ -2126,10 +2695,14 @@ aside .container .content .btnClose {
     width: 70vw;
   }
   #board .inner {
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px 15px;
+    position: absolute;
+    transform: translate(-20%, 10%);
+    background: white;
     opacity: 80%;
-    width: 35vw;
-    height: 35vh;
-    transform: translate(-30%, 30%);
+    transition: 1s 0.3s;
   }
   #board .inner a {
     display: block;

@@ -7,7 +7,6 @@ $mobile: 539px;
 @import 'board.scss';
 @import 'join.scss';
 @import 'gallery.scss';
-@import 'news.scss';
 @import 'about.scss';
 @import 'location.scss';
 @import 'youtube.scss';
@@ -744,12 +743,14 @@ aside {
                     .content {
                         max-height: 0;
                         transition: 1s;
+                        margin-top: 15px;
                          overflow: hidden;
                         p {
                             font-size: 15px;
+                            text-align: left;
                             line-height: 25px;
                             position: relative;
-                            padding: 15px 0;
+                            padding: 15px 50px;
                             color: #333;
                             z-index: 10;
                         }
@@ -878,10 +879,20 @@ aside {
         width: 70vw;
     }
     .inner{
+        width: 40%;
+		margin: 0 auto;
+        padding: 15px 15px;
+		position: absolute;
+		transform: translate(-40%, 10%);
+        background: white;
         opacity: 80%;
-        width: 40vw;
-        height: 30vh;
-        transform: translate(-30%, 30%);
+        transition: 1s 0.3s;
+        
+        // opacity: 80%;
+        // width: 40vw;
+        // top: 10%;
+        // height: 20vh;
+        // transform: translate(-30%, 30%);
         a{
             display: block;
 			width: 100%;
@@ -1084,10 +1095,19 @@ aside {
                 width: 70vw;
             }
             .inner{
+                width: 50%;
+                margin: 0 auto;
+                padding: 15px 15px;
+                position: absolute;
+                transform: translate(-20%, 10%);
+                background: white;
                 opacity: 80%;
-                width: 35vw;
-                height: 35vh;
-                transform: translate(-30%, 30%);
+                transition: 1s 0.3s;
+                
+                // opacity: 80%;
+                // width: 35vw;
+                // height: 35vh;
+                // transform: translate(-30%, 30%);
                 a{
                     display: block;
                     width: 100%;
