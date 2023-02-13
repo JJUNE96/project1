@@ -212,7 +212,6 @@ $mobile: 539px;
 #gallery{
     width: 100%;
     overflow: hidden;
-
     .inner{
         width: 100%;
         margin: 0 auto;
@@ -238,14 +237,12 @@ $mobile: 539px;
                     margin-right: 50px;
                     display: flex;
                     align-items: flex-end;
-                    //border: 1px solid #000;
                     background: #fff;
                     ul{
                         width: 100%;
                         li{
                             width: 100%;
                             height: 125px;
-                            
                             a{
                                 display: table;
                                 width: 100%;
@@ -256,22 +253,22 @@ $mobile: 539px;
                                 justify-content: center;
                                 align-items: center;
                             }
-                            &:after {
-                                display:block;
-                               width: 90px;
-                               margin-left: 40px;
-                                content: '';
-                                border-bottom: solid 3px #000;
-                                transform: scaleX(0);
-                                transition: transform 250ms ease-in-out;
-                             }
-                             &:hover:after {
-                                transform: scaleX(1);
-                             }
+                            // &:after {
+                            //     display:block;
+                            //     width: 90px;
+                            //     margin-left: 40px;
+                            //     content: '';
+                            //     border-bottom: solid 3px #000;
+                            //     transform: scaleX(0);
+                            //     transition: transform 250ms ease-in-out;
+                            //  }
+                            //  &:hover:after {
+                            //     transform: scaleX(1);
+                            //  }
                            
                               &.on {
                                 a {
-                                    color:#000;  
+                                    color:#888;  
                                     line-height: #000;  
                                 }
                             }
@@ -284,7 +281,6 @@ $mobile: 539px;
                     width: 100%;
                     height: 100%;
                     position: relative;
-                   
                     article {
                         width: 100%;
                         height: 100%;
@@ -321,7 +317,6 @@ $mobile: 539px;
                     display: block;
                     width: 100%;
                     height: 30px;
-                    //border: 1px solid #000;
                     font: bold 18px/30px 'Lora';
                     color: black;
                     text-align: center;
@@ -1029,7 +1024,7 @@ aside {
             main{
                 width: 80%;
                 nav{
-                    width: 100px;
+                    width: 70px;
                     ul{
                         li{
                             a{

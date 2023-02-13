@@ -323,7 +323,7 @@ table {
   background: #fff;
 }
 .board .inner table tr:hover {
-  background: #fff;
+  background: #ebebeb;
 }
 .board .inner table tr th {
   padding: 15px;
@@ -563,7 +563,7 @@ table {
     width: 20%;
   }
   .board .inner table tr th:nth-of-type(4) {
-    width: 20%;
+    display: none;
   }
   .board .inner table tr td {
     padding: 10px;
@@ -575,6 +575,9 @@ table {
   }
   .board .inner table tr td:nth-of-type(3) {
     font-family: "Lora";
+  }
+  .board .inner table tr td:nth-of-type(4) {
+    display: none;
   }
   .board .inner table tr td a {
     color: #000;
@@ -852,7 +855,6 @@ table {
   width: 100%;
   height: 2200px;
   position: relative;
-  opacity: 90%;
 }
 .gallery h1 {
   margin-left: 70px;
@@ -1006,7 +1008,6 @@ table {
     width: 100%;
     height: 2200px;
     position: relative;
-    opacity: 90%;
   }
   .gallery h1 {
     margin-left: 70px;
@@ -1151,7 +1152,6 @@ table {
     width: 100%;
     height: 2200px;
     position: relative;
-    opacity: 90%;
   }
   .gallery h1 {
     margin-left: 70px;
@@ -2134,20 +2134,8 @@ table {
   justify-content: center;
   align-items: center;
 }
-#gallery .inner #tab main nav ul li:after {
-  display: block;
-  width: 90px;
-  margin-left: 40px;
-  content: "";
-  border-bottom: solid 3px #000;
-  transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-}
-#gallery .inner #tab main nav ul li:hover:after {
-  transform: scaleX(1);
-}
 #gallery .inner #tab main nav ul li.on a {
-  color: #000;
+  color: #888;
   line-height: #000;
 }
 #gallery .inner #tab main section {
@@ -2831,7 +2819,7 @@ aside .container .content .btnClose {
     width: 80%;
   }
   #gallery .inner #tab main nav {
-    width: 100px;
+    width: 70px;
   }
   #gallery .inner #tab main nav ul li a {
     width: 100%;
