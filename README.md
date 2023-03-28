@@ -6,9 +6,9 @@
   <img src="https://img.shields.io/badge/Html-EF2D5E?style=flat&logo=html&logoColor=white"/>
   <img src="https://img.shields.io/badge/Css-A9225C?style=flat&logo=css&logoColor=white"/>
   <img src="https://img.shields.io/badge/Javascript-FF9E0F?style=flat&logo=javascript&logoColor=white"/>
-<br/><br/><br/>
+<br/><br/>
 프로젝트 설명서 링크:[html 프로젝트 설명서.pdf](https://github.com/JJUNE96/project1/files/11088909/html.pdf)
-
+<br/>
 [![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=JJUNE96)](https://solved.ac/JJUNE96)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FJJUNE96&count_bg=%23C83D9C&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)<br/>
 
