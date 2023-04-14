@@ -3,11 +3,11 @@
 
 1.개발환경
 -------------------------------------
-1.OS :windows 11<br/>
-2.skill : 
+OS :windows 11<br/>
+skill : 
   <img src="https://img.shields.io/badge/Html-EF2D5E?style=flat&logo=html&logoColor=white"/>
   <img src="https://img.shields.io/badge/Css-A9225C?style=flat&logo=css&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Javascript-FF9E0F?style=flat&logo=javascript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Javascript-FF9E0F?style=flat&logo=javascript&logoColor=white"/><br/><br/>
 2.주요기능
 -------------------------------------
 1. 미디어쿼리를 활용해 브라우저 폭에 따라 각각 Desktop, Tablet, Mobile phone 버전으로 반응형 처리
