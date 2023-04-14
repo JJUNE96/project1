@@ -3,9 +3,9 @@
   안녕하세요, 프론트엔드 개발자가 되기 위해 공부하고 있습니다! <br/><br/><br/>
   
   1. 개발환경
-  -------------------------
-  OS :windows 11
-  skill : 
+--------------------------------------
+1.OS :windows 11
+2.skill : 
   <img src="https://img.shields.io/badge/Html-EF2D5E?style=flat&logo=html&logoColor=white"/>
   <img src="https://img.shields.io/badge/Css-A9225C?style=flat&logo=css&logoColor=white"/>
   <img src="https://img.shields.io/badge/Javascript-FF9E0F?style=flat&logo=javascript&logoColor=white"/>
