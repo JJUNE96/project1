@@ -15,7 +15,7 @@ skill :
 3. Flickr API를 이용하여 500여개의 Flickr Image 비동기방식으로 호출해 동적으로 이미 지 갤러리 구현
 4. 원하는 키워드를 검색창에 입력하여 이미지 검색 기능등을 객체지향에 맞게 플러그인 형태로 개발
 <br/><br/>
-3.URL
+3.프로젝트 관련 자료
 -------------------------------------
 프로젝트 설명서 링크:[html 프로젝트 설명서.pdf](https://github.com/JJUNE96/project1/files/11088909/html.pdf)<br/>
 HTML 릴리즈 주소 : https://jjune96.github.io/project1/
